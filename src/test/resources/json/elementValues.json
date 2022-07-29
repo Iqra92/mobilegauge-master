@@ -1,0 +1,137 @@
+[
+  {
+    "key": "rememberMe",
+    "value": ".rememberme > .check-box",
+    "type": "css"
+  },
+  {
+    "key": "loginButton",
+    "value": "//*[@text='Login']",
+    "type": "xpath"
+  },
+  {
+    "key": "closePopup",
+    "value": "div[id=\"vlCookiePolicyCloseBtn\"]",
+    "type": "css"
+  },
+  {
+    "key": "registerButton",
+    "value": "//*[@id=\"v173\"]/div/a[2]",
+    "type": "xpath"
+  },
+  {
+    "key": "firstNameInput",
+    "value": "//*[@id='fld2']",
+    "type": "xpath"
+  },
+  {
+  "key": "lastNameInput",
+  "value": "//*[@id='fld3']",
+   "type": "xpath"
+  },
+  {
+    "key": "birthdayField",
+    "value": "//*[@id='v203']",
+    "type": "xpath"
+  },
+  {
+  "key": "yearOfBirthday",
+  "value": "yui_3_5_0_2_1658757375315_504",
+  "type": "id"
+  },
+  {
+    "key": "particularYear",
+    "value": "//[@resource-id='android:id/date_picker_year_picker']//child::[resource-id='android:id/text1'][3]",
+    "type": "xpath"
+  },
+  {
+    "key": "particulardate",
+    "value": "//android.view.View[@content-desc=\"27 July 2022\"]",
+    "type": "xpath"
+  },
+  {
+    "key": "setButtonForCalender",
+    "value": "//*[@resource-id='android:id/button']",
+    "type": "xpath"
+  },
+  {
+    "key": "nextBtn",
+    "value": "//*[@resource-id='v60']//child::android.view.View[@resource-id='v61']",
+    "type": "xpath"
+  },
+  {
+    "key": "selectDate",
+    "value": "//div[@data-value='4']",
+    "type": "xpath"
+  },
+  {
+    "key": "selectMonth",
+    "value": "(//div[@data-value='4'])[2]",
+    "type": "xpath"
+  },
+  {
+    "key": "selectYear",
+    "value": "//div[@data-value='1980']",
+    "type": "xpath"
+  },
+  {
+    "key": "email",
+    "value": "//android.widget.EditText[@resource-id='fld4']",
+    "type": "xpath"
+  },
+  {
+    "key": "registerPassword",
+    "value": "//android.widget.EditText[@resource-id='fld5']",
+    "type": "xpath"
+  },
+  {
+    "key": "registerPasswordRepeat",
+    "value": "//android.widget.EditText[@resource-id='fld6']",
+    "type": "xpath"
+  },
+  {
+    "key": "areaCode",
+    "value": "",
+    "type": "xpath"
+  },
+  {
+    "key": "mobilephone",
+    "value": "//android.widget.EditText[@resource-id='fld7']",
+    "type": "xpath"
+  },
+  {
+    "key": "acceptCheckBox",
+    "value": "",
+    "type": "xpath"
+  },
+  {
+    "key": "openAccountButton",
+    "value": "//android.view.View[@resource-id='v61']",
+    "type": "xpath"
+  },
+  {
+    "key": "loginUserNameArea",
+    "value": "//*[@resource-id='nlc_view_lb']//android.view.View[1]//android.view.View[1]//android.view.View[2]//android.widget.EditText[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "loginPasswordArea",
+    "value": "//*[@resource-id='nlc_view_lb']//android.view.View[1]//android.view.View[2]//android.view.View[2]//android.widget.EditText[1]",
+    "type": "xpath"
+  },
+  {
+    "key": "loginButtonArea",
+    "value": "//*[@resource-id='nlc_view_lb']//android.widget.Button",
+    "type": "xpath"
+  },
+  {
+    "key": "stayInMobil",
+    "value": "//android.view.View[@resource-id='rwsv']//android.view.View[3]",
+    "type": "xpath"
+  },
+  {
+    "key": "emailVerificationCodeInput",
+    "value": ".verificationCode_codeInputClassName__2wHQR.react-code-input > input",
+    "type": "css"
+  }
+]
