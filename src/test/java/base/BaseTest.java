@@ -1,9 +1,7 @@
 package base;
 
 import WebAutomationBase.helper.FileResourcesUtils;
-import WebAutomationBase.model.ElementInfo;
-import com.google.common.reflect.TypeToken;
-import com.google.gson.Gson;
+import com.thoughtworks.gauge.AfterScenario;
 import com.thoughtworks.gauge.BeforeScenario;
 import io.appium.java_client.AppiumDriver;
 import io.appium.java_client.android.AndroidDriver;
@@ -13,60 +11,68 @@ import io.appium.java_client.remote.MobileCapabilityType;
 import org.apache.commons.lang3.StringUtils;
 import org.openqa.selenium.Cookie;
 import org.openqa.selenium.Platform;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
 import org.openqa.selenium.chrome.ChromeOptions;
-import org.openqa.selenium.remote.BrowserType;
-import org.openqa.selenium.remote.CapabilityType;
-import org.openqa.selenium.remote.DesiredCapabilities;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import org.openqa.selenium.remote.*;
 
 import java.io.File;
-import java.io.FileNotFoundException;
-import java.io.FileReader;
 import java.io.IOException;
-import java.lang.reflect.Type;
 import java.net.MalformedURLException;
 import java.net.URISyntaxException;
 import java.net.URL;
-import java.security.GeneralSecurityException;
+import java.util.Arrays;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
-import java.util.concurrent.ConcurrentMap;
 import java.util.concurrent.TimeUnit;
 
 public class BaseTest {
 
     public static AppiumDriver webDriver;
-    ChromeOptions options = new ChromeOptions();
-    protected Logger logger = LoggerFactory.getLogger(getClass());
 
-    private static final String DEFAULT_DIRECTORY_PATH = "json";
-    ConcurrentMap<String, Object> elementMapList = new ConcurrentHashMap<>();
+    static ChromeOptions options = new ChromeOptions();
+
+    List<String> getContextHandles() {
+        RemoteExecuteMethod executeMethod = new RemoteExecuteMethod(webDriver);
+        List<String> contexts =  (List<String>) executeMethod.execute(DriverCommand.GET_CONTEXT_HANDLES, null);
+        return contexts;
+    }
 
 
     @BeforeScenario
     public static void setUp() throws MalformedURLException, Exception {
         System.out.println("*****************Test*****************");
         String selectPlatform = "android";
-        String BaseUrl = "https://m-test.texsportbet.com/";
+        String BaseUrl = "https://m-test.texsportbet.com/en-gb/";
         DesiredCapabilities capabilities = new DesiredCapabilities();
+
+        //options.setExperimentalOption("excludeSwitches",Arrays.asList("disable-popup-blocking"));
+
+        Map<String, Object> prefs = new HashMap<String, Object>();
+        prefs.put("credentials_enable_service", false);
+        prefs.put("profile.password_manager_enabled", false);
+
+        options.setExperimentalOption("prefs", prefs);
+
+
         if (StringUtils.isEmpty(System.getenv("key")))
         {
             System.out.println("LOCAL");
             if ("android".equalsIgnoreCase(selectPlatform)) {
                 System.out.println("android");
-                Map<String, Object> prefs = new HashMap<String, Object>();
+               // Map<String, Object> prefs = new HashMap<String, Object>();
                 prefs.put("profile.default_content_setting_values.notifications", 2);
                 capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
                 capabilities.setCapability(MobileCapabilityType.PLATFORM, Platform.ANDROID);
                 capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+                capabilities.setCapability("autoGrantPermissions", false);
+                capabilities.setCapability("dismissAlert",true);
                 URL url = new URL("http://127.0.0.1:4723/wd/hub");
-                webDriver = new AndroidDriver(url,capabilities);
+                webDriver = new AndroidDriver<> (url,capabilities);
                 webDriver.get(BaseUrl);
-                Thread.sleep(5000);
+                Thread.sleep(3000);
 
         }else if ("ios".equalsIgnoreCase(selectPlatform)) {
                 //capabilities = new DesiredCapabilities();
@@ -96,7 +102,7 @@ public class BaseTest {
             if ("ANDROID".equals(System.getenv("platform"))) {
                 ChromeOptions options = new ChromeOptions();
                 String versionOfDevice = System.getenv("version");
-                capabilities.setCapability(MobileCapabilityType.PLATFORM, Platform.ANDROID);
+                capabilities.setCapability(MobileCapabilityType.PLATFORM_NAME, Platform.ANDROID);
                 capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
                 capabilities.setCapability("key", System.getenv("key"));
                 capabilities.setCapability("rotatable", true);
@@ -105,14 +111,24 @@ public class BaseTest {
                 options.addArguments("disable-translate");
                 options.addArguments("--dns-prefetch-disable");
                 options.addArguments("--disable-notifications");
+                options.addArguments("--disable-extensions", "test-type",
+                        "no-default-browser-check", "ignore-certificate-errors",
+                        "--disable-notifications",
+                        "--disable-offer-store-unmasked-wallet-cards",
+                        "--disable-autofill-keyboard-accessory-view");
+                options.addArguments("--disable-translate");
+
                 //options.setExperimentalOption("w3c",false);
                 //options.addArguments("--host-resolver-rules=MAP *.useinsider.* 127.0.0.1");
                 capabilities.setCapability(ChromeOptions.CAPABILITY, options);
                 //    capabilities.setCapability("appPackage", "com.android.chrome");
                 //  capabilities.setCapability("appActivity", "com.google.android.apps.chrome.Main");
+                capabilities.setCapability("autoGrantPermissions", false);
+                capabilities.setCapability("dismissAlert",true);
                 capabilities.setCapability("unicodeKeyboard", true);
                 capabilities.setCapability("resetKeyboard", true);
                 capabilities.setCapability("noReset", true);
+
                 webDriver = new AndroidDriver<>(new URL("http://hub.testinium.io/wd/hub"), capabilities);
                 webDriver.get(BaseUrl);
                 //String versionOfDevice = System.getenv("version");
@@ -150,71 +166,30 @@ public class BaseTest {
             }
         }
 
+//    public  File[] readJsonFile() {
+//
+//        try {
+//            FileResourcesUtils fileHelper = new FileResourcesUtils();
+//            // files from src/main/resources/json
+//            List<File> result = fileHelper.getAllFilesFromResource("elementValues");
+//            for (File file : result) {
+//                System.out.println("file : " + file);
+////                app.printFile(file);
+//            }
+//            return    result.toArray(new File[result.size()]);
+//        } catch (URISyntaxException | IOException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
+//    }
+
 //    @AfterScenario
 //    public void tearDown() throws Exception {
 //        webDriver.quit();
 //    }
 
-    public void initMap(File[] fileList) {
-        Type elementType = new TypeToken<List<ElementInfo>>() {
-        }.getType();
-        Gson gson = new Gson();
-        List<ElementInfo> elementInfoList = null;
-        for (File file : fileList) {
-            try {
-                elementInfoList = gson
-                        .fromJson(new FileReader(file), elementType);
-                elementInfoList.parallelStream()
-                        .forEach(elementInfo -> elementMapList.put(elementInfo.getKey(), elementInfo));
-            } catch (FileNotFoundException e) {
-                logger.warn("{} not found", e);
-            }
-        }
-    }
 
-//    public File[] getFileList() {
-      /*  System.out.println("*****************check*****************");
-
-        File fileList = new File("D:\\Iqra Project\\mobilewebgauge-master\\src\\test\\resources\\json\\elementValues");
-//        File fileList = new File("D:\\Iqra Project\\mobilewebgauge-master\\src\\test\\resources\\json\\elementValues");
-        File[] fileList2 = new File(
-                this.getClass().getResource(DEFAULT_DIRECTORY_PATH).getPath())
-                .listFiles(pathname ->  pathname.getName().startsWith("elementValues"));
-//        System.out.println("*****************check2*****************"+fileList2.getClass().getName());
-
-        if (fileList2 == null) {
-//            System.out.println("*****************check2*****************"+fileList2.toPath().toString());
-
-            logger.warn(
-                    "File Directory Is Not Found! Please Check Directory Location. Default Directory Path = {}",
-                    DEFAULT_DIRECTORY_PATH);
-            throw new NullPointerException();
-
-        }*/
-//        System.out.println("*****************check3*****************"+fileList.list().length+"");
-
-//        return readJsonFile();
-//    }
-    public ElementInfo findElementInfoByKey(String key) {
-        return (ElementInfo) elementMapList.get(key);
-    }
-    public  File[] readJsonFile() {
-
-        try {
-            FileResourcesUtils fileHelper = new FileResourcesUtils();
-            // files from src/main/resources/json
-            List<File> result = fileHelper.getAllFilesFromResource("json");
-            for (File file : result) {
-                System.out.println("file : " + file);
-//                app.printFile(file);
-            }
-         return    result.toArray(new File[result.size()]);
-        } catch (URISyntaxException | IOException e) {
-            e.printStackTrace();
-            return null;
-
-        }
-    }
 }
+
 
 

@@ -12,23 +12,35 @@ import java.io.FileReader;
 import java.io.IOException;
 import java.lang.reflect.Type;
 import java.net.URISyntaxException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.ConcurrentMap;
+import java.util.stream.Stream;
 
 public enum StoreHelper
 {
     INSTANCE;
     Logger logger = LoggerFactory.getLogger(getClass());
-    private static final String DEFAULT_DIRECTORY_PATH = "elementValues";
-    ConcurrentMap<String, Object> elementMapList;
+    static File[] fileList = null;
+    ConcurrentMap<String, Object> elementMapList = new ConcurrentHashMap<>();
 
     StoreHelper() {
-//        initMap(getFileList());
-        initMap(readJsonFile());
+        try {
+            String currentWorkingDir = System.getProperty("user.dir");
+            initMap(getFileList(currentWorkingDir + "/src"));
+        }
+        catch (Exception ex) {
+            System.out.println(ex + " json dosyalarını ararken hata oluştu.");
+        }
+        // initMap(readJsonFile());
     }
 
-    private void initMap(File[] fileList) {
+
+/*    private void initMap(File[] fileList) {
         elementMapList = new ConcurrentHashMap<>();
         Type elementType = new TypeToken<List<ElementInfo>>() {
         }.getType();
@@ -44,9 +56,39 @@ public enum StoreHelper
                 logger.warn("{} not found", e);
             }
         }
+    }*/
+
+    public void initMap(List<File> fileList) {
+        Type elementType = new TypeToken<List<ElementInfo>>() {
+        }.getType();
+        Gson gson = new Gson();
+        List<ElementInfo> elementInfoList = null;
+        for (File file : fileList) {
+            try {
+                elementInfoList = gson
+                        .fromJson(new FileReader(file), elementType);
+                elementInfoList.parallelStream()
+                        .forEach(elementInfo -> elementMapList.put(elementInfo.getKey(), elementInfo));
+            } catch (FileNotFoundException e) {
+
+            }
+        }
+        System.out.println(elementMapList.size() + " Adet element listeye eklendi");
     }
 
-    private File[] getFileList() {
+    public List<File> getFileList(String directoryName) throws IOException {
+        List<File> dirList = new ArrayList<>();
+        try (Stream<Path> walkStream = Files.walk(Paths.get(directoryName))) {
+            walkStream.filter(p -> p.toFile().isFile()).forEach(f -> {
+                if (f.toString().endsWith(".json")) {
+                    logger.info(f.toFile().getName() + " adlı json dosyası bulundu.");
+                    dirList.add(f.toFile());
+                }
+            });
+        }
+        return dirList;
+    }
+/*    private File[] getFileList() {
         File[] fileList = new File(
                 this.getClass().getClassLoader().getResource(DEFAULT_DIRECTORY_PATH).getFile())
                 .listFiles(pathname -> !pathname.isDirectory() && pathname.getName().endsWith(".json"));
@@ -57,7 +99,7 @@ public enum StoreHelper
             throw new NullPointerException();
         }
         return fileList;
-    }
+    }*/
 
     public void printAllValues() {
         elementMapList.forEach((key, value) -> logger.info("Key = {} value = {}", key, value));
@@ -75,21 +117,22 @@ public enum StoreHelper
     public String getValue(String key) {
         return elementMapList.get(key).toString();
     }
-    public  File[] readJsonFile() {
 
-        try {
-            FileResourcesUtils fileHelper = new FileResourcesUtils();
-            // files from src/main/resources/json
-            List<File> result = fileHelper.getAllFilesFromResource("json");
-            for (File file : result) {
-                System.out.println("file : " + file);
-//                app.printFile(file);
-            }
-            return    result.toArray(new File[result.size()]);
-        } catch (URISyntaxException | IOException e) {
-            e.printStackTrace();
-            return null;
+//    public  File[] readJsonFile() {
+//
+//        try {
+//            FileResourcesUtils fileHelper = new FileResourcesUtils();
+//            // files from src/main/resources/json
+//            List<File> result = fileHelper.getAllFilesFromResource("elementValues");
+//            for (File file : result) {
+//                System.out.println("file : " + file);
+////                app.printFile(file);
+//            }
+//            return    result.toArray(new File[result.size()]);
+//        } catch (URISyntaxException | IOException e) {
+//            e.printStackTrace();
+//            return null;
+//        }
+//    }
 
-        }
-    }
 }

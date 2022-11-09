@@ -1,0 +1,785 @@
+[
+  {
+    "key": "allowTheNotification",
+    "value": "//android.widget.Button[@text='Allow']",
+    "type": "xpath"
+  },
+  {
+    "key": "closeTheCookie",
+    "value": "//android.view.View[@resource-id='vlCookiePolicyCloseBtn']",
+    "type": "xpath"
+  },
+  {
+    "key": "closeAppMobileRedirect",
+    "value": "//android.view.View[@resource-id='vlMobileAppRedirectCloseBtn']",
+    "type": "xpath"
+  },
+  {
+    "key": "kotonLogin",
+    "value": "//a[@id='m-login-myuser2']",
+    "type": "xpath"
+  },
+  {
+    "key": "registerButton",
+    "value": "a[href='/Account/Register']",
+    "type": "css"
+  },
+  {
+    "key": "firstNameInput",
+    "value": "input[name='firstname']",
+    "type": "css"
+  },
+  {
+    "key": "lastNameInput",
+    "value": "input[name='lastname']",
+    "type": "css"
+  },
+  {
+    "key": "birthdayField",
+    "value": "input[type='date']",
+    "type": "css"
+  },
+  {
+    "key": "nextBtn",
+    "value": "//div[@class='btn sw-accv-view-btn-save']//div[@class='btn-inner']",
+    "type": "xpath"
+  },
+  {
+    "key": "email",
+    "value": "//div[@id='v217']//input[@class='tf-inp']",
+    "type": "xpath"
+  },
+  {
+    "key": "registerPassword",
+    "value": "//div[@id='v227']//input[@name='password']",
+    "type": "xpath"
+  },
+  {
+    "key": "registerPasswordRepeat",
+    "value": "//div[@id='v237']//input[@name='passwordrepeat']",
+    "type": "xpath"
+  },
+  {
+    "key": "phoneNumberCodeSelect",
+    "value": "//div[@class='sw-telfield']//div[@class='tf sw-ddb']//select",
+    "type": "xpath"
+  },
+  {
+  "key": "phoneNumberCodeOptions",
+  "value": "//div[@class='sw-telfield']//div[@class='tf sw-ddb']//select//option",
+  "type": "xpath"
+  },
+  {
+    "key": "phoneNumber",
+    "value": "input[type='tel']",
+    "type": "css"
+  },
+  {
+    "key": "countryOptions",
+    "value": "//div[@class='sw-formv-group-content']//div[@class='sw-formv-formitem sw-formv-txtformitem'][4]//div[@class='fieldview']//div[@class='tf sw-ddb']//select//option",
+    "type": "xpath"
+  },
+  {
+    "key": "currencyOptions",
+    "value": "//div[@class='sw-formv-group-content']//div[@class='sw-formv-formitem sw-formv-txtformitem'][5]//div[@class='fieldview']//div[@class='tf sw-ddb']//select//option",
+    "type": "xpath"
+  },
+  {
+    "key": "acceptCheckBox",
+    "value": "div[class='switch-b-orn']",
+    "type": "css"
+  },
+  {
+  "key": "openAccountButton",
+  "value": "div[class='switch-b-orn']",
+  "type": "css"
+},
+  {
+    "key": "loginButtonInHamburgerMenu",
+    "value": "div[class='sw-listitem sw-mnmv-item sw-mnmv-item_account_login']",
+    "type": "css"
+  },
+  {
+    "key": "loginButton",
+    "value": "a[class='tsb-btns--login']",
+    "type": "css"
+  },
+  {
+    "key": "loginUserNameArea",
+    "value": "input[id='fld2']",
+    "type": "css"
+  },
+  {
+    "key": "loginPasswordArea",
+    "value": "input[id='fld3']",
+    "type": "css"
+  },
+  {
+    "key": "loginButtonArea",
+    "value": "div[class='btn-inner']",
+    "type": "css"
+  },
+  {
+    "key": "firstBookingItem",
+    "value": "//div[@class='sw-civ sw-accv-cbl-cbiv sw-civ-open'][1]//div[@class='sw-accv-cbl-cbitv-type']",
+    "type": "xpath"
+  },
+  {
+  "key": "assertLoginName",
+  "value": "div[class='sw-mh-name']",
+  "type": "css"
+},
+  {
+    "key": "hamburgerMenu",
+    "value": "div[class='sw-mh-mb']",
+    "type": "css"
+  },
+  {
+    "key": "usernameInBalanceArea",
+    "value": "div[class='sw-mh-name']",
+    "type": "css"
+  },
+  {
+    "key": "changeLanguage",
+    "value": "//div[@id='v345'][@class='sw-listitem sw-mnmv-item sw-mnmv-item_account_language']",
+    "type": "xpath"
+  },
+  {
+  "key": "englishButtoninLanguagePage",
+  "value": "//div[@id='v605'][@class='sw-lsv-i sw-lsv-i-gb sw-slv-i-first']",
+  "type": "xpath"
+},
+  {
+    "key": "profilePage",
+    "value": "div[class='sw-listitem sw-mnmv-item sw-mnmv-item_account']",
+    "type": "css"
+  },
+  {
+    "key": "changePasswordPage",
+    "value": "div[id='sw-prof-mi-passwordchange']",
+    "type": "css"
+  },
+  {
+    "key": "currentPass",
+    "value": "input[class='tf-inp'][name='customer.currentpassword']",
+    "type": "css"
+  },
+  {
+    "key": "newPass",
+    "value": "input[class='tf-inp'][name='customer.newpassword']",
+    "type": "css"
+  },
+  {
+    "key": "repeatNewPass",
+    "value": "input[class='tf-inp'][name='customer.passwordrepeat']",
+    "type": "css"
+  },
+  {
+    "key": "saveButton",
+    "value": "div[class='btn sw-accv-view-btn-save']",
+    "type": "css"
+  },
+  {
+    "key": "assersionOfSaveFunction",
+    "value": "div[class='sw-notify-i-title']",
+    "type": "css"
+  },
+  {
+    "key": "logoutButton",
+    "value": "div[class='sw-listitem sw-mnmv-item sw-mnmv-item_account_logout']",
+    "type": "css"
+  },
+  {
+    "key": "loginErrorMessage",
+    "value": "//div[@class='message'][text()='Username / password not correct.']",
+    "type": "xpath"
+  },
+  {
+    "key": "lostPasswordPage",
+    "value": "//div[@class='sw-listitem sw-mnmv-item sw-mnmv-item_account_lostpassword']//div[@class='sw-listitem-c']",
+    "type": "xpath"
+  },
+  {
+    "key": "NextButton",
+    "value": "div[class='btn sw-lpwdv-btn-next']",
+    "type": "css"
+  },
+  {
+    "key": "lostPasswordSecurityQuestion",
+    "value": "input[name='securityanswer']",
+    "type": "css"
+  },
+  {
+  "key": "lostPasswordSendMailPage",
+  "value": "div[class='sw-lpwdv-end-desc']",
+  "type": "css"
+},
+  {
+    "key": "registrationLabel",
+    "value": "div[class='title']",
+    "type": "css"
+  },
+  {
+    "key": "logonName",
+    "value": "input[class='tf-inp'][name='logonanme']",
+    "type": "css"
+  },
+  {
+    "key": "lastMinuteMatches",
+    "value": "div[class='sw-lgv-giv sw-core-giv sw-lgv-giv_odds sw-core-giv_type1']",
+    "type": "css"
+  },
+  {
+    "key": "firstBetOptionOfLastMinuteMatches",
+    "value": "div[class='sw-core-giv-oddvalue']",
+    "type": "css"
+  },
+  {
+    "key": "lastMatchOfLastMinuteMatches",
+    "value": "(//div[@class='sw-core-giv-quicktip sw-core-giv-quicktip-12'])[last()]",
+    "type": "xpath"
+  },
+  {
+  "key": "cicleOfSelectedMathces",
+  "value": "div[class='sw-bslw-sbct']",
+  "type": "css"
+  },
+  {
+    "key": "selectedMatchInBetSlipPage",
+    "value": "div[class='sw-bookbet-tip-oddname']",
+    "type": "css"
+  },
+  {
+  "key": "StakeValue",
+  "value": "div[class='tf-inp']",
+  "type": "css"
+  },
+  {
+  "key": "enterStakeAmount",
+  "value": "div[class='tv sw-amount-field']",
+  "type": "css"
+  },
+  {
+  "key": "okButton",
+  "value": "div[class='btn sw-btn-ok']",
+  "type": "css"
+},
+  {
+    "key": "submitBetSlip",
+    "value": "div[class='btn sw-bookbet-submit-btn']",
+    "type": "css"
+  },
+  {
+    "key": "popNotification",
+    "value": "div[class='title']",
+    "type": "css"
+  },
+  {
+    "key": "numList",
+    "value": "//div[@class='sw-numkey-keys']//div[@tabindex='0']",
+    "type": "xpath"
+  },
+  {
+  "key": "returnToHome",
+  "value": "//div[text()='Return to home']",
+  "type": "xpath"
+},
+  {
+    "key": "betsPage",
+    "value": "div[class='sw-listitem sw-mnmv-item sw-mnmv-item_account_bets']",
+    "type": "css"
+  },
+  {
+  "key": "betsPageAllOption",
+  "value": "div[class='btn btn-last']",
+  "type": "css"
+  },
+  {
+    "key": "betsPageAllOptionFirstBetToClose",
+    "value": "//div[@class='sw-civ sw-accv-bl-bv sw-accv-bl-bv-s-open sw-civ-open']",
+    "type": "xpath"
+  },
+  {
+    "key": "betsPageAllOptionFirstBetToOpen",
+    "value": "//div[@class='sw-civ sw-accv-bl-bv sw-accv-bl-bv-s-open sw-co-e-e'][1]",
+    "type": "xpath"
+  },
+  {
+    "key": "placedMatchInBetsPage",
+    "value": "div[class='name']",
+    "type": "css"
+  },
+  {
+    "key": "goToHomePage",
+    "value": "div[id='mhv_logo']",
+    "type": "css"
+  },
+  {
+    "key": "slipOddValue",
+    "value": "div[class='sw-bookbet-tip-oddvalue']",
+    "type": "css"
+  },
+  {
+  "key": "goToPaymentPage",
+  "value": "div[class='sw-listitem sw-mnmv-item sw-mnmv-item_payment']",
+  "type": "css"
+  },
+  {
+  "key": "depositAccentInMethod",
+  "value": "div[title='Accent In via AccentPay']",
+  "type": "css"
+  },
+  {
+  "key": "depositLowAmount",
+  "value": "//div[@class='sw-payfv-dd']//div[@class='sw-payv-info-line'][1]//div[@class='tv value']",
+  "type": "xpath"
+  },
+  {
+    "key": "depositHighAmount",
+    "value": "//div[@class='sw-payfv-dd']//div[@class='sw-payv-info-line'][2]//div[@class='tv value']",
+    "type": "xpath"
+  },
+  {
+    "key": "transactionAmount",
+    "value": "input[class='tf-inp'][name='amount']",
+    "type": "css"
+  },
+  {
+    "key": "continueToTransaction",
+    "value": "button[class='btn sw-payv-ad-info-btn-ok']",
+    "type": "css"
+  },
+  {
+    "key": "transactionMessageForWithdrawal",
+    "value": "div[class='tv sw-payv-waitingapproval-infol2']",
+    "type": "css"
+  },
+  {
+    "key": "transactionNumberWithdrawal",
+    "value": "div[class='tv value']",
+    "type": "css"
+  },
+  {
+  "key": "debitOptionForMonnet",
+  "value": "button[id='debito']",
+  "type": "css"
+  },
+  {
+    "key": "depositAmountInThirdPartForMonnetDebitMethod",
+    "value": "h5[class='amount']",
+    "type": "css"
+  },
+  {
+    "key": "bankOptionForDebitMonnet",
+    "value": "//li[@_ngcontent-c20]//button[@_ngcontent-c20]//div[@class='issuer-logo']",
+    "type": "xpath"
+  },
+  {
+    "key": "bankListForDebitMonnet",
+    "value": "button[class='combobox-button']",
+    "type": "css"
+  },
+  {
+    "key": "cardNumberForDebitMonnet",
+    "value": "input[id='pan']",
+    "type": "css"
+  },
+  {
+    "key": "pagarButtonToContinuePayment",
+    "value": "button[class='submit']",
+    "type": "css"
+  },
+  {
+    "key": "depositAmountInThirdPartForMonnetBankMethod",
+    "value": "p[class='h-text-price']",
+    "type": "css"
+  },
+  {
+    "key": "bankOptionForBankMonnet",
+    "value": "//p[contains(text(),'Banco de prueba')]",
+    "type": "xpath"
+  },
+  {
+    "key": "rutInfoForBankMonnet",
+    "value": "span[class='input-placeholder  ']",
+    "type": "css"
+  },
+  {
+    "key": "passwordForBankMonnet",
+    "value": "input[type='password']",
+    "type": "css"
+  },
+  {
+    "key": "continueToPaymentPageBankMonnet",
+    "value": "div[class='custom-button-container  ']",
+    "type": "css"
+  },
+  {
+    "key": "cardCodeA1",
+    "value": "//input[@class='input-input ']",
+    "type": "xpath"
+  },
+  {
+    "key": "cardCodeB1",
+    "value": "//input[@class='input-input ']",
+    "type": "xpath"
+  },
+  {
+    "key": "cardCodeC1",
+    "value": "//input[@class='input-input ']",
+    "type": "xpath"
+  },
+  {
+    "key": "continuarAfterCode",
+    "value": "//p[@class='custom-button-text']",
+    "type": "xpath"
+  },
+  {
+    "key": "claveCode",
+    "value": "//input[@class='input-input ']",
+    "type": "xpath"
+  },
+  {
+    "key": "activationCodeForMonnetBankMethod1",
+    "value": "//div[@class='is-input-wrapper'][1]//input[@type='password']",
+    "type": "xpath"
+  },
+  {
+    "key": "activationCodeForMonnetBankMethod2",
+    "value": "//div[@class='is-input-wrapper'][2]//input[@type='password']",
+    "type": "xpath"
+  },
+  {
+    "key": "activationCodeContainerForMonnetBankMethod",
+    "value": "div[class='is-container ']",
+    "type": "css"
+  },
+  {
+    "key": "activationCodeWrapperForMonnetBankMethod",
+    "value": "//input[@type='password']",
+    "type": "xpath"
+  },
+  {
+    "key": "creditCardNumber",
+    "value": "input[name='PaymentData[pan]']",
+    "type": "css"
+  },
+  {"key": "ownerNameOfCard",
+  "value": "input[name='PaymentData[card_holder]']",
+  "type": "css"
+  },
+  {"key": "selectMonth",
+    "value": "select[name='PaymentData[month]']",
+    "type": "css"
+  },
+  {"key": "optionsOfMonths",
+  "value": "option[value='5']",
+  "type": "css"
+  },
+  {"key": "selectYear",
+    "value": "select[name='PaymentData[year]']",
+    "type": "css"
+  },
+  {"key": "optionsOfYears",
+    "value": "option[value='2024']",
+    "type": "css"
+  },
+  {"key": "cvvField",
+    "value": "input[name='PaymentData[cvv]']",
+    "type": "css"
+  },
+  {"key": "continueButton",
+    "value": "button[class='button margin-top-m']",
+    "type": "css"
+  },
+  {"key": "continueButtonOnLastDepositPage",
+  "value": "button[type='button']",
+  "type": "css"
+  },
+  {"key": "goToBookingsPage",
+    "value": "div[class='sw-listitem sw-mnmv-item sw-mnmv-item_account_bookings']",
+    "type": "css"
+  },
+  {"key": "goToDocumentPage",
+    "value": "//div[@class='content'][text()='Documents']",
+    "type": "xpath"
+  },
+  {"key": "selectTypeOfIdentifierToDocument",
+    "value": "select",
+    "type": "css"
+  },
+  {"key": "uploadDocumentButton",
+    "value": "input[type='file']",
+    "type": "css"
+  },
+  {"key": "optionsOfIdentifier",
+    "value": "option[value]",
+    "type": "css"
+  },
+  {"key": "dropdownListTest",
+    "value": "select[class='form-control ng-pristine ng-valid ng-touched']",
+    "type": "css"
+  },
+  {"key": "optionsOfTest",
+    "value": "#Skills >option",
+    "type": "css"
+  },
+  {"key": "goToProfilePage",
+    "value": "div[class='sw-listitem sw-mnmv-item sw-mnmv-item_account']",
+    "type": "css"
+  },
+  {
+    "key": "goToBetSettingsPage",
+    "value": "div[id='sw-prof-mi-betsettings']",
+    "type": "css"
+  },
+  {"key": "oddValueChangesSelect",
+    "value": "//div[@class='sw-formv-formitem sw-formv-txtformitem'][1]//div[@class='fieldview']//div[@class='tf sw-ddb']//select",
+    "type": "xpath"
+  },
+  {"key": "oddValueChangesOptions",
+    "value": "//div[@class='sw-formv-formitem sw-formv-txtformitem'][1]//div[@class='fieldview']//div[@class='tf sw-ddb tf-focus']//select//option[@value]",
+    "type": "xpath"
+  },
+  {"key": "cashoutAmountChangesSelect",
+    "value": "//div[@class='sw-formv-formitem sw-formv-txtformitem'][2]//div[@class='fieldview']//div[@class='tf sw-ddb']//select",
+    "type": "xpath"
+  },
+  {"key": "cashoutAmountChangesOptions",
+    "value": "//div[@class='sw-formv-formitem sw-formv-txtformitem'][2]//div[@class='fieldview']//div[@class='tf sw-ddb']//select//option",
+    "type": "xpath"
+  },
+  {"key": "defaultStake",
+    "value": "input[name='defaultstake']",
+    "type": "css"
+  },
+  {"key": "apcoMethod",
+    "value": "div[title='Apco In via Apco Fastpay']",
+    "type": "css"
+  },
+  {"key": "apcoCreditCard",
+    "value": "input[name='txtCardNumber']",
+    "type": "css"
+  },
+  {"key": "apcoOwnerName",
+    "value": "input[name='txtCardHolderName']",
+    "type": "css"
+  },
+  {"key": "apcoCvv",
+    "value": "input[name='txtCVV']",
+    "type": "css"
+  },
+  {"key": "monthOptionsApco",
+    "value": "//select[@name='ddlExpiryMonth']//option[@value]",
+    "type": "xpath"
+  },
+  {"key": "yearOptionsApco",
+    "value": "//select[@name='ddlExpiryYear']//option[@value]",
+    "type": "xpath"
+  },
+  {"key": "submitBtnApco",
+    "value": "input[name='btnSubmit']",
+    "type": "css"
+  },
+  {"key": "apsCardMethod",
+    "value": "div[title='APS Card In via APS Card']",
+    "type": "css"
+  },
+  {
+    "key": "customerID",
+    "value": "//input[@label-placeholder ='Customer ID']",
+    "type": "xpath"
+  },
+  {
+    "key": "customerIDType",
+    "value": "//input[@type= 'search']",
+    "type": "xpath"
+  },
+  {
+    "key": "listOfCustomerIDType",
+    "value": "//div[@class ='ant-select-item-option-content']",
+    "type": "xpath"
+  },
+  { "key": "payButton",
+    "value": "//button[@type='submit']",
+    "type": "xpath"
+  },
+  { "key": "backTrade",
+    "value": "//button[@class='button btn--primary']",
+    "type": "xpath"
+  },
+  {"key": "ApsCreditCard",
+    "value": "input[id='card-number']",
+    "type": "css"
+  },
+  {"key": "ApsCvv",
+    "value": "card-cvv",
+    "type": "id"
+  },
+  {"key": "cardExpirationAPS",
+    "value": "input[id='card-exp']",
+    "type": "css"
+  },
+  {"key": "cuntinueButtonAPS",
+    "value": "//button[@class='submit']",
+    "type": "xpath"
+  },
+  {
+    "key": "bankListForDebitAPS",
+    "value": "button[class='combobox-button']",
+    "type": "css"
+  },
+  {
+    "key": "bankOptionForDebitAPS",
+    "value": "//span[contains (text(), 'TEST COMMERCE BANK')]",
+    "type": "xpath"
+  },
+  {
+    "key": "cardNumberForDebitAPS",
+    "value": "input[id='pan']",
+    "type": "css"
+  },
+  {
+    "key": "debitOptionForMonnet",
+    "value": "button[id='debito']",
+    "type": "css"
+  },
+  {"key": "monnetCardMethod",
+    "value": "div[title='Monnet Card In via Monnet Card']",
+    "type": "css"
+  },
+  {"key": "monnetBankMethod",
+    "value": "div[title='Monnet Bank In via Monnet Bank']",
+    "type": "css"
+  },
+  {"key": "optionsOfIdentityTypeForMonnet",
+    "value": "//option[@value='RUT'] | //option[@value='PP']",
+    "type": "xpath"
+  },
+  {"key": "identityNumberForMonnet",
+  "value": "input[name='identitynumber']",
+  "type": "css"
+  },
+  {"key": "creditoForMonnet",
+  "value": "button[id='credito']",
+  "type": "css"
+  },
+  {"key": "monnetCreditCard",
+    "value": "input[id='card-number']",
+    "type": "css"
+  },
+  {"key": "monnetCvv",
+    "value": "card-cvv",
+    "type": "id"
+  },
+  {"key": "cardExpirationMonnet",
+    "value": "input[id='card-exp']",
+    "type": "css"
+  },
+  {"key": "cuntinueButtonMonnet",
+    "value": "button[class='next']",
+    "type": "css"
+  },
+  {"key": "installmentButtonMonnet",
+    "value": "button[class='combobox-button']",
+    "type": "css"
+  },
+  {"key": "selectInstallmentOptionMonnet",
+    "value": "//span[text()='Sin Cuotas']",
+    "type": "xpath"
+  },
+  {"key": "allowInstallmentOptionMonnet",
+    "value": "//button[contains(text(), 'Confirmar')]",
+    "type": "xpath"
+  },
+  {"key": "allowPaymentMonnet",
+    "value": "button[class='next']",
+    "type": "css"
+  },
+  {"key": "rutClient",
+    "value": "//input[@name ='rutClient']",
+    "type": "xpath"
+  },
+  {"key": "claveClient",
+    "value": "//input[@id = 'passwordClient']",
+    "type": "xpath"
+  },
+  {"key": "acceptPaymentLastPage",
+    "value": "input[type='submit']",
+    "type": "css"
+  },
+  {"key": "continuePaymentLastPage",
+    "value": "input[value='Continuar']",
+    "type": "css"
+  },
+  {"key": "openWithdrawalMethods",
+    "value": "//div[text()='Withdrawal']",
+    "type": "xpath"
+  },
+  {"key": "monnetWithdrawalMethods",
+    "value": "div[title='Monnet Bank Out via Monnet Bank']",
+    "type": "css"
+  },
+  {"key": "apsWithdrawalMethods",
+    "value": "div[title='APS Bank Out via APS Bank']",
+    "type": "css"
+  },
+  {"key": "bankOptions",
+    "value": "//select[@name='institutename']//option[@value]",
+    "type": "xpath"
+  },
+  {"key": "bankAccountNumber",
+    "value": "input[name='instituteaddress']",
+    "type": "css"
+  },
+  {"key": "identityTypeOptions",
+    "value": "//select[@name='identitytype']//option[@value]",
+    "type": "xpath"
+  },
+  {"key": "currentBalanceTransaction",
+    "value": "//div[@class='sw-payv-info-line sw-payfv-info-line-pa']//div[@class='tv value']",
+    "type": "xpath"
+  },
+  {"key": "imageOfMonnetTransaction",
+    "value": "img[src='images/transbank.gif']",
+    "type": "css"
+  },
+  {
+    "key": "cardInWithdrawalPage",
+    "value": "select[name='charge_id']",
+    "type": "css"
+  },
+  {"key": "apcoWithdrawalMethods",
+    "value": "div[title='Apco Out via Apco Fastpay']",
+    "type": "css"
+  },
+  {"key": "creditCardField",
+    "value": "//select[@name='charge_id']//option[@value]",
+    "type": "xpath"
+  },
+  {"key": "maskedCardNumber",
+    "value": "input[name='card_number']",
+    "type": "css"
+  },
+  {"key": "creditCardMonth",
+    "value": "//select[@name='card_expiration_m']//option[@value]",
+    "type": "xpath"
+  },
+  {"key": "creditCardYear",
+    "value": "//select[@name='card_expiration_y']//option[@value]",
+    "type": "xpath"
+  },
+  {"key": "paymentPage",
+    "value": "div[class='btn sw-payv-conf-btn-yes']",
+    "type": "css"
+  },
+  {"key": "paymentPageVerified",
+    "value": "div[class='btn sw-payv-ad-info-btn-ok']",
+    "type": "css"
+  },
+  {
+    "key": "depositAPSBank",
+    "value": "div[title='APS Bank In via APS Bank']",
+    "type": "css"
+  }
+]

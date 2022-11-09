@@ -16,15 +16,12 @@ public class FileResourcesUtils {
             throws URISyntaxException, IOException {
 
         ClassLoader classLoader = getClass().getClassLoader();
-
         URL resource = classLoader.getResource(folder);
-
         // dun walk the root path, we will walk all the classes
         List<File> collect = Files.walk(Paths.get(resource.toURI())) // walk method is used for searching file
                 .filter(Files::isRegularFile)
                 .map(x -> x.toFile())
                 .collect(Collectors.toList());
-
         return collect;
     }
     // print a file
