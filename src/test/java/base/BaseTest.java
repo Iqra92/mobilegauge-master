@@ -66,7 +66,7 @@ public class BaseTest {
                 prefs.put("profile.default_content_setting_values.notifications", 2);
                 capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
                 capabilities.setCapability(MobileCapabilityType.PLATFORM, Platform.ANDROID);
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy S8+");
                 capabilities.setCapability("autoGrantPermissions", false);
                 capabilities.setCapability("dismissAlert",true);
                 URL url = new URL("http://127.0.0.1:4723/wd/hub");

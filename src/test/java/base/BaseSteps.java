@@ -6,6 +6,7 @@ import WebAutomationBase.model.ElementInfo;
 import com.thoughtworks.gauge.Step;
 import io.restassured.RestAssured;
 import io.restassured.response.Response;
+import org.apache.commons.lang.RandomStringUtils;
 import org.junit.Assert;
 import org.openqa.selenium.*;
 import org.openqa.selenium.interactions.Actions;
@@ -25,6 +26,7 @@ import java.time.ZonedDateTime;
 import java.util.*;
 import java.util.concurrent.ThreadLocalRandom;
 
+import static WebAutomationBase.helper.Constant.*;
 import static io.restassured.RestAssured.given;
 import static org.junit.Assert.assertTrue;
 
@@ -533,6 +535,12 @@ public class BaseSteps extends BaseTest {
         findElement(key).sendKeys(randomText);
         logger.info("The text was written to the field as: " + randomText);
     }
+    @Step({"Write random Alpha value to element <key> starting with <text>"})
+    public void writeRandomAlphaValueToElement(String key, String startingText) {
+        String value = RandomStringUtils.randomAlphabetic(5);
+        findElement(key).sendKeys(startingText+ value);
+        logger.info("The text was written to the field as: " + startingText + value);
+    }
 
     @Step({"Print element text by css <css>",
             "Elementin text değerini yazdır css <css>"})
@@ -697,7 +705,8 @@ public class BaseSteps extends BaseTest {
         Long timestamp = getTimestamp();
         WebElement webElement = findElement(key);
         webElement.clear();
-        webElement.sendKeys("testotomasyon" + timestamp + "@testinium.com");
+        webElement.sendKeys("test" + timestamp + "@testinium.com");
+        logger.info("Random Email is:" + "test" + timestamp + "@testinium.com");
 
     }
 
@@ -1438,6 +1447,7 @@ public void  searchKeyy(String key) throws InterruptedException {
     }
 
 
+
     public int randomIntGenerateNumber(String key, String keys){
         WebElement low = findElement(key);
         WebElement high = findElement(keys);
@@ -1491,6 +1501,8 @@ public void  searchKeyy(String key) throws InterruptedException {
             "Send number to the defined element"})
     public void sendValue() {
         ((JavascriptExecutor)webDriver).executeScript("document.querySelector(\"input[type='tel']\").value=\"1234567890\"");
+        logger.info("Phone number is:" + ((JavascriptExecutor)webDriver).executeScript("document.querySelector(\"input[type='tel']\").value=\"1234567890\""));
+
     }
 
     @Step({"Get current url and verify that the url is the same with the <text>"})
@@ -1535,9 +1547,9 @@ public void  searchKeyy(String key) throws InterruptedException {
         DecimalFormat df = new DecimalFormat("0");
         df.setMaximumFractionDigits(0);
         String formatedStringValue = df.format(floatValue);
-        logger.info("liters of petrol before putting in editor : "+formatedStringValue);
+        logger.info("Formatted String Value is : "+formatedStringValue);
         int intCurrent = (int) Math.floor(Double.parseDouble(formatedStringValue)) ;
-        logger.info("String Current Value with Comma: " + intCurrent);
+        logger.info("String Current Value is: " + intCurrent);
         int lowNumber= Integer.parseInt(lowValue);
         logger.info("lowNumber: " + lowNumber);
 
@@ -1550,6 +1562,32 @@ public void  searchKeyy(String key) throws InterruptedException {
 
     }
 
+
+    @Step("Save Low dollar amount <key> and Write Amount <key>")
+    public void getdollarAmountLowandWrite(String lowAmount,String writeAmount){
+        WebElement low = findElement(lowAmount);
+        String lowValueWithComma = low.getText().replace(".00 USD","");
+        logger.info("String Low Value with Comma: " + lowValueWithComma);
+        String lowValue = lowValueWithComma.replace(",", "");
+        logger.info("String Low Value: " + lowValue);
+        Float floatValue=Float.parseFloat(lowValue);
+        DecimalFormat df = new DecimalFormat("0");
+        df.setMaximumFractionDigits(0);
+        String formatedStringValue = df.format(floatValue);
+        logger.info("Formatted String Value is : "+formatedStringValue);
+        int intCurrent = (int) Math.floor(Double.parseDouble(formatedStringValue)) ;
+        logger.info("String Current Value is: " + intCurrent);
+        int lowNumber= Integer.parseInt(lowValue);
+        logger.info("lowNumber: " + lowNumber);
+
+        StoreHelper.INSTANCE.saveValue(lowAmount, String.valueOf(lowNumber));
+        logger.info("saveKey for genareted random number: " + lowAmount);
+        waitBySeconds(2);
+        StoreHelper.INSTANCE.getValue(lowAmount);
+        WebElement element = findElement(writeAmount);
+        element.sendKeys(StoreHelper.INSTANCE.getValue(lowAmount));
+
+    }
 
     public int randomIntGenerateNumberWith(String key, String keys, String keyed){
         WebElement low = findElement(key);
@@ -1589,6 +1627,31 @@ public void  searchKeyy(String key) throws InterruptedException {
         }
         // element.sendKeys(String.valueOf(result));
         return result;
+    }
+
+    @Step({"Pick the one of elements <keys> randomly excluding first option For Condition and write identity number <keys>"})
+    public void pickTheElementRandomExcludingFirstOptionForCondition(String type, String num) {
+        List<WebElement> elements = findElements(type); //Get all options
+        Random randomOption = new Random();
+        int startOption = 1; //assuming "--your choice--" is index "0"
+        int endOption = elements.size(); // end of range
+        int number = startOption + randomOption .nextInt( endOption - startOption);
+        String value = elements.get(number).getText();
+        elements.get(number).click();
+        logger.info("value: " +value);
+        logger.info("The element is selected");
+
+        if (Objects.equals(value.trim(), IDENTITY_TYPE)){
+            findElement(num).sendKeys(IDENTITY_NUMBER);
+            logger.info( "' text is written to the '" +num + "' element.");
+        }
+        else{
+            findElement(num).sendKeys(IDENTITY_OTHER_NUMBER);
+            logger.info( "' text is written to the '" +num + "' element.");
+
+        }
+
+
     }
 
     @Step({"Genarete random number for <key> and <keys> and <keyed>, and saved the number <saveKey>. And write the saved key to the <keyy> element"})

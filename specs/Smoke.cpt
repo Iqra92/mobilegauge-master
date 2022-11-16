@@ -39,16 +39,25 @@ This is a concept file with following syntax for each concept.
 * Write value "123456789" to element "loginPasswordArea"
 * Click to element "loginButtonArea"
 
+# Go to QA Env For Equador country
+* Wait "2" seconds
+* Wait for element then click "hamburgerMenu"
+* Wait for element then click "loginButtonInHamburgerMenu"
+* Write value "iq.manzoor92@gmail.com" to element "loginUserNameArea"
+* Write value "123456789" to element "loginPasswordArea"
+* Click to element "loginButtonArea"
+
 # Go to register page
 *Wait "2" seconds
-* Click to element "registerButton"
-//* Wait for element then click "registerButton"
+* Wait for element then click "hamburgerMenu"
+//* Click to element "registerButton"
+* Wait for element then click "registerButton"
 * Wait "2" seconds
 
 # Sign Up
 //* Find element by "firstNameInput" clear and send keys "test"
-* Write random value to element "firstNameInput" starting with "test"
-* Write random value to element "lastNameInput" starting with "testinium"
+* Write random Alpha value to element "firstNameInput" starting with "test"
+* Write random Alpha value to element "lastNameInput" starting with "testinium"
 //* Debug Step
 //* Find element by "birthdayField" and send value
 * Send value to the defined element
@@ -239,6 +248,9 @@ This is a concept file with following syntax for each concept.
 # Enter Amount
 * Save Low amount "depositLowAmount" and Write Amount "transactionAmount"
 
+# Enter Amount For Dollar
+* Save Low dollar amount "depositLowAmount" and Write Amount "transactionAmount"
+
 # Continue To Transaction
 * Wait "2" seconds
 * Click to the defined element with "continueToTransaction"
@@ -252,7 +264,7 @@ This is a concept file with following syntax for each concept.
 * Wait "2" seconds
 * Wait for element then click "listOfCustomerIDType"
 * Wait for element then click "payButton"
-* Wait "25" seconds
+* Wait "30" seconds
 
 # Enter New Credit Card İnformation with <cardnumber>
 * Find element by "creditCardNumber" clear and send keys <cardnumber>
@@ -273,11 +285,13 @@ This is a concept file with following syntax for each concept.
 * Pick the one of elements "optionsOfMonths" randomly
 * Pick the one of elements "optionsOfYears" randomly
 * Wait for element then click "continueButton"
-* Wait "10" seconds
+* Wait "2" seconds
 
 
 # Enter Credit Card İnformation with <cardnumber>, <cardownername> and <cvvNumber> apco
 * Wait "10" seconds
+* Wait for element then click "addCard"
+* Wait "2" seconds
 * Write value <cardnumber> to element "apcoCreditCard"
 //* Find element by "creditCardNumber" clear and send keys <cardnumber>
 //* Find element by "ownerNameOfCard" clear and send keys "Test"
@@ -287,6 +301,9 @@ This is a concept file with following syntax for each concept.
 * Pick the one of elements "yearOptionsApco" randomly
 * Wait "10" seconds
 * Wait for element then click "submitBtnApco"
+//* Write value "123" to element "apcoPassword"
+//* Wait "5" seconds
+
 
 # Select the Identity Type and Enter the Identity Number
 * Pick the one of elements "optionsOfIdentityTypeForMonnet" randomly
@@ -404,11 +421,11 @@ This is a concept file with following syntax for each concept.
 
 # Select the Bank Type and Enter the Account Number
 * Pick the one of elements "bankOptions" randomly excluding first option
-* Write value "4051 8856 0044 6623" to element "bankAccountNumber"
+* Write value "4051885600446623" to element "bankAccountNumber"
 
 
 # Select the Credit Card
-//* Wait for element then click "cardInWithdrawalPage"
+* Wait for element then click "cardInWithdrawalPage"
 * Wait "2" seconds
 * Pick the one of elements "creditCardField" randomly excluding first option
 * Wait "5" seconds
@@ -426,8 +443,9 @@ This is a concept file with following syntax for each concept.
 * Write value "000000" to element "maskedCardNumber"
 
 # Select the Identity Type and Enter the Account Number
-* Pick the one of elements "identityTypeOptions" randomly excluding first option
-* Write value "111111111" to element "identityNumberForMonnet"
+* Wait "2" seconds
+* Pick the one of elements "listOfIdentityTypeInWithdrawalPage" randomly excluding first option For Condition and write identity number "identityNumber"
+
 
 # Compare the entered withdrawal amount same with amount which inside the transactions info
 //* Save "transactionAmountInText" the replaced value "transactionMessageForWithdrawal" inside the text

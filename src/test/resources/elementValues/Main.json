@@ -21,8 +21,8 @@
   },
   {
     "key": "registerButton",
-    "value": "a[href='/Account/Register']",
-    "type": "css"
+    "value": "//div[contains(text(), 'Register')]",
+    "type": "xpath"
   },
   {
     "key": "firstNameInput",
@@ -93,7 +93,7 @@
   "key": "openAccountButton",
   "value": "div[class='switch-b-orn']",
   "type": "css"
-},
+ },
   {
     "key": "loginButtonInHamburgerMenu",
     "value": "div[class='sw-listitem sw-mnmv-item sw-mnmv-item_account_login']",
@@ -781,5 +781,21 @@
     "key": "depositAPSBank",
     "value": "div[title='APS Bank In via APS Bank']",
     "type": "css"
+  },
+  {
+    "key": "accentWithdrawalMethods",
+    "value": "div[title='Accent Out via AccentPay']",
+    "type": "css"
+  },
+  {
+    "key": "apcoPassword",
+    "value": "input[type='password']",
+    "type": "css"
+  },
+  {
+    "key": "addCard",
+    "value": "button[id='btnAddCard']",
+    "type": "css"
   }
+
 ]

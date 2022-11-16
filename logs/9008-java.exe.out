@@ -3,27 +3,33 @@
 SLF4J: A number (19) of logging calls during the initialization phase have been intercepted and are
 SLF4J: now being replayed. These are subject to the filtering rules of the underlying logging system.
 SLF4J: See also http://www.slf4j.org/codes.html#replay
-{"logLevel":"debug","message":"gauge-java took 10144milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
-{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 10144"}
+{"logLevel":"debug","message":"gauge-java took 7820milliseconds to load and scan. This should be less than 'runner_connection_timeout' config value."}
+{"logLevel":"debug","message":"run 'gauge config runner_connection_timeout' and verify that it is < 7820"}
 {"logLevel":"debug","message":"starting gRPC server..."}
-2022-07-20 13:15:21 INFO  Reflections:219 scan - Reflections took 9690 ms to scan 133 urls, producing 12924 keys and 73278 values
+2022-11-15 14:23:19 INFO  Reflections:219 scan - Reflections took 7245 ms to scan 132 urls, producing 12498 keys and 69430 values
 {"logLevel":"debug","message":"Scanning packages for steps"}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.scrolldownBottomofPage' and 'base.BaseSteps.scrolldownBottomofPage'"}
 {"logLevel":"debug","message":"Found Scrollu sayfanın sonuna kaydır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.scrolldownBottomofPage' and 'base.BaseSteps.scrolldownBottomofPage'"}
+{"logLevel":"debug","message":"Found Scroll to the end of the page in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.createRandomString' and 'base.BaseSteps.createRandomString'"}
 {"logLevel":"debug","message":"Found {} uzunlugunda random bir kelime üret ve {} olarak sakla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.assertNotNullTextByKey' and 'base.BaseSteps.assertNotNullTextByKey'"}
+{"logLevel":"debug","message":"Found {} li elementin text değerinin boş olmadığını kontrol et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.assertNotNullTextByKey' and 'base.BaseSteps.assertNotNullTextByKey'"}
+{"logLevel":"debug","message":"Found Find element by {} and text contains any value in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeysByKey2' and 'base.BaseSteps.sendKeysByKey2'"}
 {"logLevel":"debug","message":"Found {} li elementi bul, temizle in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeysByKey2' and 'base.BaseSteps.sendKeysByKey2'"}
 {"logLevel":"debug","message":"Found Find element by {} clear  in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendTextToCardCode' and 'base.BaseSteps.sendTextToCardCode'"}
+{"logLevel":"debug","message":"Found Send the text to the card Code {},{},and {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.comboboxRandom' and 'base.BaseSteps.comboboxRandom'"}
 {"logLevel":"debug","message":"Found {} olarak comboboxdan bir değer seçilir in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.checkElementExistsThenClick' and 'base.BaseSteps.checkElementExistsThenClick'"}
 {"logLevel":"debug","message":"Found Wait for element then click {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.checkElementExistsThenClick' and 'base.BaseSteps.checkElementExistsThenClick'"}
-{"logLevel":"debug","message":"Found Elementi bekle ve sonra tıkla {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.testVerificationCode' and 'base.BaseSteps.testVerificationCode'"}
-{"logLevel":"debug","message":"Found Write verification code to {} in current project scope."}
+{"logLevel":"debug","message":"Found Elementi ekle ve sonra tıkla {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.acceptChromeAlertPopup' and 'base.BaseSteps.acceptChromeAlertPopup'"}
 {"logLevel":"debug","message":"Found Accept Chrome alert popup in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.acceptChromeAlertPopup' and 'base.BaseSteps.acceptChromeAlertPopup'"}
@@ -36,10 +42,10 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Check if {} element's attribute {} equals to the value {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.checkElementAttributeEquals' and 'base.BaseSteps.checkElementAttributeEquals'"}
 {"logLevel":"debug","message":"Found {} elementinin {} niteliği {} değerine sahip mi in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.SiparisDurumuKarsilastir' and 'base.BaseSteps.SiparisDurumuKarsilastir'"}
-{"logLevel":"debug","message":"Found Siparis durmunu {} elementli kartla {} ve {} elementini kullanarak karsilastir in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.ClearUserRequest' and 'base.BaseSteps.ClearUserRequest'"}
 {"logLevel":"debug","message":"Found {} kullanıcısını api üzerinden sil in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.getdollarAmountLowandWrite' and 'base.BaseSteps.getdollarAmountLowandWrite'"}
+{"logLevel":"debug","message":"Found Save Low dollar amount {} and Write Amount {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.tarihAl' and 'base.BaseSteps.tarihAl'"}
 {"logLevel":"debug","message":"Found {} tarihinden 2 gün sonraya al in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.getElementWithKeyIfExistsWithMessage' and 'base.BaseSteps.getElementWithKeyIfExistsWithMessage'"}
@@ -56,19 +62,28 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Write saved attribute value to element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.writeSavedAttributeToElement' and 'base.BaseSteps.writeSavedAttributeToElement'"}
 {"logLevel":"debug","message":"Found Kaydedilmiş niteliği {} elementine yaz in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.searchKeyy' and 'base.BaseSteps.searchKeyy'"}
-{"logLevel":"debug","message":"Found Arama alanına {} bilgisini yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.waitElementLoadWithCss' and 'base.BaseSteps.waitElementLoadWithCss'"}
 {"logLevel":"debug","message":"Found Wait for element to load with css {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.waitElementLoadWithCss' and 'base.BaseSteps.waitElementLoadWithCss'"}
 {"logLevel":"debug","message":"Found Elementin yüklenmesini bekle css {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.searchKeyy' and 'base.BaseSteps.searchKeyy'"}
+{"logLevel":"debug","message":"Found Arama alanına {} bilgisini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.pickTheElementRandomExcludingFirstOption' and 'base.BaseSteps.pickTheElementRandomExcludingFirstOption'"}
+{"logLevel":"debug","message":"Found {} elementlerinden ilk seçenek hariç birini random olarak seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.pickTheElementRandomExcludingFirstOption' and 'base.BaseSteps.pickTheElementRandomExcludingFirstOption'"}
+{"logLevel":"debug","message":"Found Pick the one of elements {} randomly excluding first option in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.scrollToElementBeWanted' and 'base.BaseSteps.scrollToElementBeWanted'"}
+{"logLevel":"debug","message":"Found scroll to {} and {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKey' and 'base.BaseSteps.equalsSaveTextByKey'"}
 {"logLevel":"debug","message":"Found {} li elementi bul ve değerini {} saklanan değer ile karşılaştır in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSendTextByKey' and 'base.BaseSteps.equalsSaveTextByKey'"}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyContain' and 'base.BaseSteps.equalsSaveTextByKey'"}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyNotequal' and 'base.BaseSteps.equalsSaveTextByKey'"}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKey' and 'base.BaseSteps.equalsSaveTextByKey'"}
 {"logLevel":"debug","message":"Found Find element by {} and compare saved key {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.savePickedElementValue' and 'base.BaseSteps.savePickedElementValue'"}
+{"logLevel":"debug","message":"Found {} listesinden bir element seç ve {} olarak sakla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.pickTheElementRandom' and 'base.BaseSteps.pickTheElementRandom'"}
+{"logLevel":"debug","message":"Found {} elementlerinden birini random olarak seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.pickTheElementRandom' and 'base.BaseSteps.pickTheElementRandom'"}
+{"logLevel":"debug","message":"Found Pick the one of elements {} randomly in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.talepOlusturVeFiyatOnayıVer' and 'base.BaseSteps.talepOlusturVeFiyatOnayıVer'"}
 {"logLevel":"debug","message":"Found {} Vergi numarasına sahip kullanıcı için post metodu ile {} Talep Numarası oluştur in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.writeRandomValueToElement' and 'base.BaseSteps.writeRandomValueToElement'"}
@@ -79,6 +94,8 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Write {} to {} of element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.setElementAttribute' and 'base.BaseSteps.setElementAttribute'"}
 {"logLevel":"debug","message":"Found {} değerini {} niteliğine {} elementi için yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.getAmountLowandWrite' and 'base.BaseSteps.getAmountLowandWrite'"}
+{"logLevel":"debug","message":"Found Save Low amount {} and Write Amount {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.implementation1' and 'base.BaseSteps.implementation1'"}
 {"logLevel":"debug","message":"Found {} olarak {} seçersem in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.LoadedofElement' and 'base.BaseSteps.LoadedofElement'"}
@@ -94,22 +111,19 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.olarakSeçersemm' and 'base.BaseSteps.olarakSeçersemm'"}
 {"logLevel":"debug","message":"Found {} olarak {} seçersemm in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.RandomeMail' and 'base.BaseSteps.RandomeMail'"}
-{"logLevel":"debug","message":"Found {} li elementi bul, temizle ve rasgele  email değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Found {} li elementi bul, temizle ve rasgele email değerini yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.RandomeMail' and 'base.BaseSteps.RandomeMail'"}
-{"logLevel":"debug","message":"Found Find element by {} clear and send keys  random email in current project scope."}
+{"logLevel":"debug","message":"Found Find element by {} clear and send keys random email in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.doubleclickElement' and 'base.BaseSteps.doubleclickElement'"}
-{"logLevel":"debug","message":"Found {} elementine çift tıkla in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyContain' and 'base.BaseSteps.equalsSaveTextByKeyContain'"}
-{"logLevel":"debug","message":"Found {} li elementi bul ve değerini {} saklanan değeri içeriyor mu kontrol et in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSendTextByKey' and 'base.BaseSteps.equalsSaveTextByKeyContain'"}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyContain' and 'base.BaseSteps.equalsSaveTextByKeyContain'"}
-{"logLevel":"debug","message":"Found Find element by {} and compare saved key {} in current project scope."}
+{"logLevel":"debug","message":"Found {} double clicked to the element in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyNotequal' and 'base.BaseSteps.equalsSaveTextByKeyNotequal'"}
 {"logLevel":"debug","message":"Found {} li elementi bul ve değerini {} saklanan değer ile karşılaştır ve değişiklik oldugunu dogrula in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSendTextByKey' and 'base.BaseSteps.equalsSaveTextByKeyNotequal'"}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyContain' and 'base.BaseSteps.equalsSaveTextByKeyNotequal'"}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyNotequal' and 'base.BaseSteps.equalsSaveTextByKeyNotequal'"}
-{"logLevel":"debug","message":"Found Find element by {} and compare saved key {} in current project scope."}
+{"logLevel":"debug","message":"Found Find element by {} and compare saved key {} and verified that there is differance in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyContain' and 'base.BaseSteps.equalsSaveTextByKeyContain'"}
+{"logLevel":"debug","message":"Found {} li elementi bul ve değerini {} saklanan değeri içeriyor mu kontrol et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKeyContain' and 'base.BaseSteps.equalsSaveTextByKeyContain'"}
+{"logLevel":"debug","message":"Found Find element by {} and compare saved key {} contains the text of element in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.clickParticularElement' and 'base.BaseSteps.clickParticularElement'"}
 {"logLevel":"debug","message":"Found {} elementleri arasından {} kayıtlı değişkene tıkla in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.calenderrr' and 'base.BaseSteps.calenderrr'"}
@@ -118,8 +132,10 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Write value {} to element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeys' and 'base.BaseSteps.sendKeys'"}
 {"logLevel":"debug","message":"Found {} textini {} elemente yaz in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.connectToEmail' and 'base.BaseSteps.connectToEmail'"}
-{"logLevel":"debug","message":"Found Connect to gmail with {} and {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.picksave' and 'base.BaseSteps.picksave'"}
+{"logLevel":"debug","message":"Found Genarete random number for {} and {}, and saved the number {}. And write the saved key to the {} element in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.replaceTheRemainigValueAndSave' and 'base.BaseSteps.replaceTheRemainigValueAndSave'"}
+{"logLevel":"debug","message":"Found Save {} the replaced value {} inside the text in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.HideKeyboard' and 'base.BaseSteps.HideKeyboard'"}
 {"logLevel":"debug","message":"Found Hide keyboard in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.HideKeyboard' and 'base.BaseSteps.HideKeyboard'"}
@@ -140,10 +156,16 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found {} li elementi bul, temizle ve {} değerini yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeysByKey' and 'base.BaseSteps.sendKeysByKey'"}
 {"logLevel":"debug","message":"Found Find element by {} clear and send keys {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.clickValue' and 'base.BaseSteps.clickValue'"}
+{"logLevel":"debug","message":"Found {} ile tanımlanan elemente tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.clickValue' and 'base.BaseSteps.clickValue'"}
+{"logLevel":"debug","message":"Found Click to the defined element with {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.RandomeMailAndSave' and 'base.BaseSteps.RandomeMailAndSave'"}
 {"logLevel":"debug","message":"Found {} li elementi bul, temizle ve rasgele  email değerini yaz, emaili {} olarak sakla in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.attributeExistWithValue' and 'base.BaseSteps.attributeExistWithValue'"}
 {"logLevel":"debug","message":"Found Sayfadaki {} elementi {} değerini içerir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.attributeExistWithValue' and 'base.BaseSteps.attributeExistWithValue'"}
+{"logLevel":"debug","message":"Found {} element on the page contains {} the value in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.ClickHamburgerManu' and 'base.BaseSteps.ClickHamburgerManu'"}
 {"logLevel":"debug","message":"Found Hamburger manüye tıkla in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.existTapByKey' and 'base.BaseSteps.existTapByKey'"}
@@ -165,7 +187,7 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeysValueOfClear' and 'base.BaseSteps.sendKeysValueOfClear'"}
 {"logLevel":"debug","message":"Found {} li elementi bul ve {} değerini tek tek yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.randomSec' and 'base.BaseSteps.randomSec'"}
-{"logLevel":"debug","message":"Found Key li {} ementler arasından rasgele bir tanesine tıkla in current project scope."}
+{"logLevel":"debug","message":"Found Key li {} elementler arasından rasgele bir tanesine tıkla in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.chromeZoomOut' and 'base.BaseSteps.chromeZoomOut'"}
 {"logLevel":"debug","message":"Found Change page zoom to {}% in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.chromeZoomOut' and 'base.BaseSteps.chromeZoomOut'"}
@@ -180,22 +202,39 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Elementine tıkla {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.printPageSource' and 'base.BaseSteps.printPageSource'"}
 {"logLevel":"debug","message":"Found Print page source in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.SeferlerimTalepNumarasıKarsilastir' and 'base.BaseSteps.SeferlerimTalepNumarasıKarsilastir'"}
-{"logLevel":"debug","message":"Found {} in icerdiği {} elementiyle {} elementini seferlerim icin karsilastir in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.printElementText' and 'base.BaseSteps.printElementText'"}
 {"logLevel":"debug","message":"Found Print element text by css {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.printElementText' and 'base.BaseSteps.printElementText'"}
 {"logLevel":"debug","message":"Found Elementin text değerini yazdır css {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.scrollToElement' and 'base.BaseSteps.scrollToElement'"}
-{"logLevel":"debug","message":"Found scroll to the {} area in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSavedTextByKeyContains' and 'base.BaseSteps.equalsSavedTextByKeyContains'"}
+{"logLevel":"debug","message":"Found {} li elementi bul ve değeri {} saklanan değeri içeriyor mu kontrol et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByKey' and 'base.BaseSteps.equalsSavedTextByKeyContains'"}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSavedTextByKeyContains' and 'base.BaseSteps.equalsSavedTextByKeyContains'"}
+{"logLevel":"debug","message":"Found Find element by {} and compare saved key {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.scrollToElement' and 'base.BaseSteps.scrollToElement'"}
 {"logLevel":"debug","message":"Found {} alanına kaydır in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.AracTalepleriTalepNumarasıKarsilastir' and 'base.BaseSteps.AracTalepleriTalepNumarasıKarsilastir'"}
-{"logLevel":"debug","message":"Found {} elementiyle {} elemetindeki {} textini karsilastir in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.scrollToElement' and 'base.BaseSteps.scrollToElement'"}
+{"logLevel":"debug","message":"Found scroll to the element {} be visible in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.selectTheValueRandom' and 'base.BaseSteps.selectTheValueRandom'"}
+{"logLevel":"debug","message":"Found {} elementlerinden birini {} adetine göre random olarak dropdown listesinden seç in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.selectTheValueRandom' and 'base.BaseSteps.selectTheValueRandom'"}
+{"logLevel":"debug","message":"Found Select the one of elements {} randomly regarding {} size in the dropdown list in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendTextWithJs' and 'base.BaseSteps.sendTextWithJs'"}
+{"logLevel":"debug","message":"Found {} ile tanımlanan elemente Js ile değer yazdır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendTextWithJs' and 'base.BaseSteps.sendTextWithJs'"}
+{"logLevel":"debug","message":"Found Send the text to the defined RUT field with {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyToElementTAB' and 'base.BaseSteps.sendKeyToElementTAB'"}
 {"logLevel":"debug","message":"Found Send TAB key to element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyToElementTAB' and 'base.BaseSteps.sendKeyToElementTAB'"}
 {"logLevel":"debug","message":"Found Elemente TAB keyi yolla {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendValueByKey' and 'base.BaseSteps.sendValueByKey'"}
+{"logLevel":"debug","message":"Found Tanımlanan elemente, value değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendValueByKey' and 'base.BaseSteps.sendValueByKey'"}
+{"logLevel":"debug","message":"Found Send value to the defined element in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendTextWithJs2' and 'base.BaseSteps.sendTextWithJs2'"}
+{"logLevel":"debug","message":"Found {} ile tanımlanan Aktivasyon Kodu alanına Js ile değer yazdır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendTextWithJs2' and 'base.BaseSteps.sendTextWithJs2'"}
+{"logLevel":"debug","message":"Found Send the text to the defined Activation Code field with {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.writeRandomNameToElement' and 'base.BaseSteps.writeRandomNameToElement'"}
 {"logLevel":"debug","message":"Found {} elementine random isim yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.goToUrl' and 'base.BaseSteps.goToUrl'"}
@@ -206,6 +245,8 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Debug Step in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.olarakIndexiSecersemm' and 'base.BaseSteps.olarakIndexiSecersemm'"}
 {"logLevel":"debug","message":"Found {} olarak {} indexi seçersem in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.uploadFileToElementWithPath' and 'base.BaseSteps.uploadFileToElementWithPath'"}
+{"logLevel":"debug","message":"Found Upload the file with {} to the element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.elementeJSileYaz' and 'base.BaseSteps.elementeJSileYaz'"}
 {"logLevel":"debug","message":"Found {} elementine {} değerini js ile yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.chromeOpenNewTab' and 'base.BaseSteps.chromeOpenNewTab'"}
@@ -234,12 +275,12 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Write value {} to element {} with focus in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeysWithFocus' and 'base.BaseSteps.sendKeysWithFocus'"}
 {"logLevel":"debug","message":"Found {} değerini {} elementine focus ile yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.selectProduct' and 'base.BaseSteps.selectProduct'"}
+{"logLevel":"debug","message":"Found Ürün seç in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.checkElementNotExists' and 'base.BaseSteps.checkElementNotExists'"}
 {"logLevel":"debug","message":"Found Check if element {} not exists in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.checkElementNotExists' and 'base.BaseSteps.checkElementNotExists'"}
 {"logLevel":"debug","message":"Found Element yok mu kontrol et {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.selectProduct' and 'base.BaseSteps.selectProduct'"}
-{"logLevel":"debug","message":"Found Ürün seç in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.chooseValueFromCalendar' and 'base.BaseSteps.chooseValueFromCalendar'"}
 {"logLevel":"debug","message":"Found Choose {} day later from {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.chooseValueFromCalendar' and 'base.BaseSteps.chooseValueFromCalendar'"}
@@ -248,6 +289,10 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found {} li elementi bul, temizle ve rasgele isim değerini yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.RandomeName' and 'base.BaseSteps.RandomeName'"}
 {"logLevel":"debug","message":"Found Find element by {} clear and send keys random isim in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendIntKeys' and 'base.BaseSteps.sendIntKeys'"}
+{"logLevel":"debug","message":"Found Write int value {} to element {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendIntKeys' and 'base.BaseSteps.sendIntKeys'"}
+{"logLevel":"debug","message":"Found {} sayısını {} elemente yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.saveAttributeValueOfElement' and 'base.BaseSteps.saveAttributeValueOfElement'"}
 {"logLevel":"debug","message":"Found Save attribute {} value of element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.saveAttributeValueOfElement' and 'base.BaseSteps.saveAttributeValueOfElement'"}
@@ -257,17 +302,25 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsTextByKey' and 'base.BaseSteps.equalsTextByKey'"}
 {"logLevel":"debug","message":"Found {} li elementin değeri {} e eşitliğini kontrol et in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsTextByKey' and 'base.BaseSteps.equalsTextByKey'"}
-{"logLevel":"debug","message":"Found Find element by {} and text equals {} in current project scope."}
+{"logLevel":"debug","message":"Found Find element by {} and verify that text of element equals to {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.checkElementExistsThenClickTryCatch' and 'base.BaseSteps.checkElementExistsThenClickTryCatch'"}
 {"logLevel":"debug","message":"Found Wait for element then click {} try in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.checkElementExistsThenClickTryCatch' and 'base.BaseSteps.checkElementExistsThenClickTryCatch'"}
 {"logLevel":"debug","message":"Found Elementi bekle ve sonra tıkla {} try in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyOneByOne' and 'base.BaseSteps.sendKeyOneByOne'"}
+{"logLevel":"debug","message":"Found {} textini {} elemente tek tek yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.chromeFocusFrameWithNumber' and 'base.BaseSteps.chromeFocusFrameWithNumber'"}
 {"logLevel":"debug","message":"Found Focus on frame with {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.chromeFocusFrameWithNumber' and 'base.BaseSteps.chromeFocusFrameWithNumber'"}
 {"logLevel":"debug","message":"Found Frame'e odaklan {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyOneByOne' and 'base.BaseSteps.sendKeyOneByOne'"}
-{"logLevel":"debug","message":"Found {} textini {} elemente tek tek yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendValue' and 'base.BaseSteps.sendValue'"}
+{"logLevel":"debug","message":"Found Tanımlanan elemente, numara değerini yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendValue' and 'base.BaseSteps.sendValue'"}
+{"logLevel":"debug","message":"Found Send number to the defined element in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.assertionOfElement' and 'base.BaseSteps.assertionOfElement'"}
+{"logLevel":"debug","message":"Found Assert that the text of element {} is null in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.pickSaveMore' and 'base.BaseSteps.pickSaveMore'"}
+{"logLevel":"debug","message":"Found Genarete random number for {} and {} and {}, and saved the number {}. And write the saved key to the {} element in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyToElementDOWN' and 'base.BaseSteps.sendKeyToElementDOWN'"}
 {"logLevel":"debug","message":"Found Send DOWN key to element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyToElementDOWN' and 'base.BaseSteps.sendKeyToElementDOWN'"}
@@ -276,6 +329,10 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Write random value to element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.writeRandomValueToElement' and 'base.BaseSteps.writeRandomValueToElement'"}
 {"logLevel":"debug","message":"Found {} elementine random değer yaz in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.dismissChromeAlertPopup' and 'base.BaseSteps.dismissChromeAlertPopup'"}
+{"logLevel":"debug","message":"Found Dismiss Chrome alert popup in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.dismissChromeAlertPopup' and 'base.BaseSteps.dismissChromeAlertPopup'"}
+{"logLevel":"debug","message":"Found Chrome uyarı popup'ını reddet in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.waitByMilliSeconds' and 'base.BaseSteps.waitByMilliSeconds'"}
 {"logLevel":"debug","message":"Found Wait {} milliseconds in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.waitByMilliSeconds' and 'base.BaseSteps.waitByMilliSeconds'"}
@@ -288,14 +345,18 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Click with javascript to css {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.javascriptClickerWithCss' and 'base.BaseSteps.javascriptClickerWithCss'"}
 {"logLevel":"debug","message":"Found Javascript ile css tıkla {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyToElementENTER' and 'base.BaseSteps.sendKeyToElementENTER'"}
-{"logLevel":"debug","message":"Found Send ENTER key to element {} in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyToElementENTER' and 'base.BaseSteps.sendKeyToElementENTER'"}
-{"logLevel":"debug","message":"Found Elemente ENTER keyi yolla {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.uploadFile' and 'base.BaseSteps.uploadFile'"}
 {"logLevel":"debug","message":"Found Upload file in project {} to element {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.uploadFile' and 'base.BaseSteps.uploadFile'"}
 {"logLevel":"debug","message":"Found Proje içindeki {} dosyayı {} elemente upload et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyToElementENTER' and 'base.BaseSteps.sendKeyToElementENTER'"}
+{"logLevel":"debug","message":"Found Send ENTER key to element {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeyToElementENTER' and 'base.BaseSteps.sendKeyToElementENTER'"}
+{"logLevel":"debug","message":"Found Elemente ENTER keyi yolla {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByOtherSaveTextContain' and 'base.BaseSteps.equalsSaveTextByOtherSaveTextContain'"}
+{"logLevel":"debug","message":"Found {} değeri {} saklanan değerini içeriyor mu kontrol et in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSaveTextByOtherSaveTextContain' and 'base.BaseSteps.equalsSaveTextByOtherSaveTextContain'"}
+{"logLevel":"debug","message":"Found Compare saved key {} contains the other saved key {} of element in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.clearInputAreaWithBackspace' and 'base.BaseSteps.clearInputAreaWithBackspace'"}
 {"logLevel":"debug","message":"Found Clear text of element {} with BACKSPACE in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.clearInputAreaWithBackspace' and 'base.BaseSteps.clearInputAreaWithBackspace'"}
@@ -303,22 +364,30 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.chromeFocusTabWithNumber' and 'base.BaseSteps.chromeFocusTabWithNumber'"}
 {"logLevel":"debug","message":"Found Focus on tab number {} in current project scope."}
 {"logLevel":"debug","message":"Loading {} numaralı sekmeye odaklanvia reflected sources."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.capabilities' and 'base.BaseSteps.capabilities'"}
+{"logLevel":"debug","message":"Found Close the pop up in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.saveTheGenaretedValueAndWrite' and 'base.BaseSteps.saveTheGenaretedValueAndWrite'"}
+{"logLevel":"debug","message":"Found Genarete random number and saved the number {}. And write the saveKey to the {} element in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.ComboboxSelecting' and 'base.BaseSteps.ComboboxSelecting'"}
 {"logLevel":"debug","message":"Found Comboboxtan {} seçersem in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.ListofElementsLoaded' and 'base.BaseSteps.ListofElementsLoaded'"}
 {"logLevel":"debug","message":"Found Elementi bekle ve tıkla {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.rastgelTelNoGelsin' and 'base.BaseSteps.rastgelTelNoGelsin'"}
 {"logLevel":"debug","message":"Found Rastgele telefon no üret in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.rastgelTelNoGelsin' and 'base.BaseSteps.rastgelTelNoGelsin'"}
+{"logLevel":"debug","message":"Found Generate to random phonenumber in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSendTextByKey' and 'base.BaseSteps.equalsSendTextByKey'"}
 {"logLevel":"debug","message":"Found {} li elementi bul ve değerini {} saklanan degeri yazdir in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.equalsSendTextByKey' and 'base.BaseSteps.equalsSendTextByKey'"}
-{"logLevel":"debug","message":"Found Find element by {} and compare saved key {} in current project scope."}
+{"logLevel":"debug","message":"Found Find element by {} and write the saved key {} to element in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.sendKeysToExistElement' and 'base.BaseSteps.sendKeysToExistElement'"}
+{"logLevel":"debug","message":"Found Write value {} to element {}, if the element exists in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.elementeJSileTikla' and 'base.BaseSteps.elementeJSileTikla'"}
 {"logLevel":"debug","message":"Found {} elementine javascript ile tıkla in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.replaceSomeValue' and 'base.BaseSteps.replaceSomeValue'"}
+{"logLevel":"debug","message":"Found Get text by {} and replace the symbols than save the text {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.Selectcathegory' and 'base.BaseSteps.Selectcathegory'"}
 {"logLevel":"debug","message":"Found Kadın kategortisini seç in current project scope."}
-{"logLevel":"debug","message":"Comparing 'base.BaseSteps.setRandomTelno' and 'base.BaseSteps.setRandomTelno'"}
-{"logLevel":"debug","message":"Found write the phone number to {} the element in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.setRandomTelno' and 'base.BaseSteps.setRandomTelno'"}
 {"logLevel":"debug","message":"Found Telefon noyu {} elementine yaz in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.javascriptClickerWithXpath' and 'base.BaseSteps.javascriptClickerWithXpath'"}
@@ -333,175 +402,268 @@ SLF4J: See also http://www.slf4j.org/codes.html#replay
 {"logLevel":"debug","message":"Found Check if {} element's attribute {} contains the value {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.checkElementAttributeContains' and 'base.BaseSteps.checkElementAttributeContains'"}
 {"logLevel":"debug","message":"Found {} elementinin {} niteliği {} değerini içeriyor mu in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.hoverElementBy' and 'base.BaseSteps.hoverElementBy'"}
+{"logLevel":"debug","message":"Found Hover element by {} in current project scope."}
 {"logLevel":"debug","message":"Comparing 'base.BaseSteps.scrollToElementWithJs' and 'base.BaseSteps.scrollToElementWithJs'"}
 {"logLevel":"debug","message":"Found {} alanına js ile kaydır in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.getCurrentURL' and 'base.BaseSteps.getCurrentURL'"}
+{"logLevel":"debug","message":"Found Get current url and verify that the url is the same with the {} in current project scope."}
+{"logLevel":"debug","message":"Comparing 'base.BaseSteps.uploadFileToElement' and 'base.BaseSteps.uploadFileToElement'"}
+{"logLevel":"debug","message":"Found Upload the file to the element {} in current project scope."}
 {"logLevel":"debug","message":"Scanning packages for hooks"}
 {"logLevel":"debug","message":"Scanned steps (using static parsing + reflections): "}
 {"logLevel":"debug","message":"\t{} kullanıcısını api üzerinden sil : public void ClearUserRequest(String username)"}
+{"logLevel":"debug","message":"\tPick the one of elements {} randomly excluding first option : public void pickTheElementRandomExcludingFirstOption(String keys)"}
+{"logLevel":"debug","message":"\tFind element by {} clear and send keys random email : public void RandomeMail(String key)"}
+{"logLevel":"debug","message":"\tFind element by {} and verify that text of element equals to {} : public void equalsTextByKey(String key, String text)"}
 {"logLevel":"debug","message":"\t{} olarak {} indexi seçersem : public void olarakIndexiSecersemm(String key, String index) throws InterruptedException"}
-{"logLevel":"debug","message":"\tWait for element to load with xpath {} : public void waitElementLoadWithXpath(String xpath)"}
-{"logLevel":"debug","message":"\tJavascript ile css tıkla {} : public void javascriptClickerWithCss(String css)"}
-{"logLevel":"debug","message":"\tHamburger manüye tıkla : public void ClickHamburgerManu() throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} listesinden bir element seç ve {} olarak sakla : public void savePickedElementValue(String keys, String saveKeys)"}
+{"logLevel":"debug","message":"\tSend number to the defined element : public void sendValue()"}
 {"logLevel":"debug","message":"\tCheck if element {} not have attribute {} : public void checkElementAttributeNotExists(String key, String attribute)"}
 {"logLevel":"debug","message":"\tCheck if element {} has attribute {} : public void checkElementAttributeExists(String key, String attribute)"}
 {"logLevel":"debug","message":"\t{} adresine git : public void goToUrl(String url)"}
-{"logLevel":"debug","message":"\t{} değerini {} niteliğine {} elementi için JS ile yaz : public void setElementAttributeWithJs(String value, String attributeName, String key)"}
-{"logLevel":"debug","message":"\tElementi bekle ve sonra tıkla {} try : public void checkElementExistsThenClickTryCatch(String key)"}
 {"logLevel":"debug","message":"\tElement {} var mı kontrol et yoksa hata mesajı ver {} : public void getElementWithKeyIfExistsWithMessage(String key, String message)"}
-{"logLevel":"debug","message":"\tFind element by {} and save text {} : public void saveTextByKey(String key, String saveKey) throws InterruptedException"}
-{"logLevel":"debug","message":"\t{} li elementi bul, temizle ve rasgele  email değerini yaz, emaili {} olarak sakla : public void RandomeMailAndSave(String key, String saveKey)"}
-{"logLevel":"debug","message":"\t{} li elementi bul ve {} değerini tek tek yaz : public void sendKeysValueOfClear(String key, String text)"}
-{"logLevel":"debug","message":"\tÜrün seç : public void selectProduct() throws InterruptedException"}
-{"logLevel":"debug","message":"\tOpen new tab : public void chromeOpenNewTab()"}
-{"logLevel":"debug","message":"\tWait for element then click {} try : public void checkElementExistsThenClickTryCatch(String key)"}
+{"logLevel":"debug","message":"\tTanımlanan elemente, numara değerini yaz : public void sendValue()"}
 {"logLevel":"debug","message":"\tArama alanına {} bilgisini yaz : public void searchKeyy(String key) throws InterruptedException"}
 {"logLevel":"debug","message":"\tŞuanki URL {} değerini içeriyor mu kontrol et : public void checkURLContainsRepeat(String expectedURL)"}
 {"logLevel":"debug","message":"\tElemente TAB keyi yolla {} : public void sendKeyToElementTAB(String key)"}
 {"logLevel":"debug","message":"\t{} elementine random isim yaz : public void writeRandomNameToElement(String key)"}
 {"logLevel":"debug","message":"\tElementini bekle {} : public void LoadedofElement(String key)"}
-{"logLevel":"debug","message":"\t{} elementinin {} niteliği {} değerini içeriyor mu : public void checkElementAttributeContains(String key, String attribute, String expectedValue)"}
 {"logLevel":"debug","message":"\t{} olarak comboboxdan bir değer seçilir : public void comboboxRandom(String key) throws InterruptedException"}
-{"logLevel":"debug","message":"\tConnect to gmail with {} and {} : public static void connectToEmail(String email, String password)"}
 {"logLevel":"debug","message":"\tSend ESCAPE key to element {} : public void sendKeyToElementESCAPE(String key)"}
 {"logLevel":"debug","message":"\t{} olarak {} seçersemm : public void olarakSeçersemm(String key, String text)"}
-{"logLevel":"debug","message":"\tWrite value {} to element {} : public void sendKeys(String text, String key)"}
-{"logLevel":"debug","message":"\t{} değişkenini {} elementine yaz : public void sendKeysVariable(String degisken, String key)"}
-{"logLevel":"debug","message":"\t{} elementiyle {} elemetindeki {} textini karsilastir : public void AracTalepleriTalepNumarasıKarsilastir(String key, String cardDetail, String keyToCompare) throws InterruptedException"}
-{"logLevel":"debug","message":"\tDebug Step : public void debug() throws InterruptedException"}
-{"logLevel":"debug","message":"\tClick to element {} with focus : public void clickElementWithFocus(String key)"}
-{"logLevel":"debug","message":"\tElementi bekle ve sonra tıkla {} : public void checkElementExistsThenClick(String key)"}
-{"logLevel":"debug","message":"\tFind element by {} clear and send keys random isim : public void RandomeName(String key)"}
-{"logLevel":"debug","message":"\t{} in icerdiği {} elementiyle {} elementini seferlerim icin karsilastir : public void SeferlerimTalepNumarasıKarsilastir(String IlkKart, String key, String keyToCompare) throws InterruptedException"}
-{"logLevel":"debug","message":"\t{} numaralı sekmeye odaklan : null"}
+{"logLevel":"debug","message":"\tFind element by {} and text contains any value : public void assertNotNullTextByKey(String key)"}
+{"logLevel":"debug","message":"\tscroll to the element {} be visible : public void scrollToElement(String key)"}
+{"logLevel":"debug","message":"\tSend value to the defined element : public void sendValueByKey()"}
+{"logLevel":"debug","message":"\t{} elementlerinden ilk seçenek hariç birini random olarak seç : public void pickTheElementRandomExcludingFirstOption(String keys)"}
 {"logLevel":"debug","message":"\tWait for element to load with key {} : public WebElement getElementWithKeyIfExists(String key)"}
 {"logLevel":"debug","message":"\tElemente BACKSPACE keyi yolla {} : public void sendKeyToElementBACKSPACE(String key)"}
-{"logLevel":"debug","message":"\tWrite {} to {} of element {} : public void setElementAttribute(String value, String attributeName, String key)"}
+{"logLevel":"debug","message":"\tClose the pop up : public void capabilities()"}
 {"logLevel":"debug","message":"\t{} elementine {} değeri ile başlayan random değer yaz : public void writeRandomValueToElement(String key, String startingText)"}
+{"logLevel":"debug","message":"\t{} ile tanımlanan Aktivasyon Kodu alanına Js ile değer yazdır : public void sendTextWithJs2(String key)"}
 {"logLevel":"debug","message":"\tTarih olarak günün tarihinden {} gün sonrasını {} olarak kaydedersem : public String calenderrr(String gun, String BenimTarih)"}
-{"logLevel":"debug","message":"\t{} li elementin değeri {} e eşitliğini kontrol et : public void equalsTextByKey(String key, String text)"}
 {"logLevel":"debug","message":"\tFind element by {} clear  : public void sendKeysByKey2(String key)"}
-{"logLevel":"debug","message":"\tPrint page source : public void printPageSource()"}
 {"logLevel":"debug","message":"\tWait {} milliseconds : public void waitByMilliSeconds(long milliseconds)"}
-{"logLevel":"debug","message":"\tRefresh page : public void refreshPage()"}
+{"logLevel":"debug","message":"\tHover element by {} : private void hoverElementBy(String key)"}
+{"logLevel":"debug","message":"\t{} değeri {} saklanan değerini içeriyor mu kontrol et : public void equalsSaveTextByOtherSaveTextContain(String saveKey, String saveKeyy)"}
+{"logLevel":"debug","message":"\tGenarete random number for {} and {} and {}, and saved the number {}. And write the saved key to the {} element : public void pickSaveMore(String key, String keys, String keyed, String saveKey, String keyy)"}
 {"logLevel":"debug","message":"\tKlavyeyi kapat : public static void HideKeyboard()"}
-{"logLevel":"debug","message":"\t{} milisaniye bekle : public void waitByMilliSeconds(long milliseconds)"}
-{"logLevel":"debug","message":"\tFind element by {} and text equals {} : public void equalsTextByKey(String key, String text)"}
+{"logLevel":"debug","message":"\tKey li {} elementler arasından rasgele bir tanesine tıkla : public void randomSec(String key)"}
+{"logLevel":"debug","message":"\tElementi ekle ve sonra tıkla {} : public void checkElementExistsThenClick(String key)"}
 {"logLevel":"debug","message":"\t{} elementi {} değerini içeriyor mu kontrol et : public void checkElementContainsText(String key, String expectedText)"}
-{"logLevel":"debug","message":"\tElementin yüklenmesini bekle css {} : public void waitElementLoadWithCss(String css)"}
 {"logLevel":"debug","message":"\tCheck if element {} exists else print message {} : public void getElementWithKeyIfExistsWithMessage(String key, String message)"}
-{"logLevel":"debug","message":"\t{} elementi {} niteliğine sahip değil mi : public void checkElementAttributeNotExists(String key, String attribute)"}
-{"logLevel":"debug","message":"\t{} alanını javascript ile temizle : public void clearWithJS(String key)"}
-{"logLevel":"debug","message":"\tSiparis durmunu {} elementli kartla {} ve {} elementini kullanarak karsilastir : public void SiparisDurumuKarsilastir(String key, String kartDurumu, String keyToCompare) throws InterruptedException"}
-{"logLevel":"debug","message":"\t{} niteliğini sakla {} elementi için : public void saveAttributeValueOfElement(String attribute, String key)"}
+{"logLevel":"debug","message":"\tElementin yüklenmesini bekle css {} : public void waitElementLoadWithCss(String css)"}
 {"logLevel":"debug","message":"\tElementin yüklenmesini bekle ve tıkla {} : public WebElement getElementWithKeyIfExists2(String key)"}
-{"logLevel":"debug","message":"\t{} alanına kaydır : public void scrollToElement(String key)"}
-{"logLevel":"debug","message":"\tElemente ESCAPE keyi yolla {} : public void sendKeyToElementESCAPE(String key)"}
-{"logLevel":"debug","message":"\tGo to {} address : public void goToUrl(String url)"}
+{"logLevel":"debug","message":"\tscroll to {} and {} : public void scrollToElementBeWanted(Integer x, Integer y)"}
+{"logLevel":"debug","message":"\tSave {} the replaced value {} inside the text : public void replaceTheRemainigValueAndSave(String key, String saved)"}
 {"logLevel":"debug","message":"\t{} olarak {} seçersem : public void implementation1(String key, String text) throws InterruptedException"}
-{"logLevel":"debug","message":"\tCheck if element {} exists : public WebElement getElementWithKeyIfExists(String key)"}
-{"logLevel":"debug","message":"\tJavascript ile xpath tıkla {} : public void javascriptClickerWithXpath(String xpath)"}
-{"logLevel":"debug","message":"\tCheck if current URL contains the value {} : public void checkURLContainsRepeat(String expectedURL)"}
 {"logLevel":"debug","message":"\t{} alanına js ile kaydır : public void scrollToElementWithJs(String key)"}
-{"logLevel":"debug","message":"\tFind element by {} and compare saved key {} : public void equalsSendTextByKey(String key, String saveKey) throws InterruptedException"}
-{"logLevel":"debug","message":"\tscroll to the {} area : public void scrollToElement(String key)"}
-{"logLevel":"debug","message":"\tSon sekmeye odaklan : public void chromeFocusLastTab()"}
-{"logLevel":"debug","message":"\tWrite random value to element {} : public void writeRandomValueToElement(String key)"}
-{"logLevel":"debug","message":"\tFind element by {} clear and send keys  random email : public void RandomeMail(String key)"}
+{"logLevel":"debug","message":"\tCheck if current URL contains the value {} : public void checkURLContainsRepeat(String expectedURL)"}
+{"logLevel":"debug","message":"\tJavascript ile xpath tıkla {} : public void javascriptClickerWithXpath(String xpath)"}
+{"logLevel":"debug","message":"\tClick to the defined element with {} : public void clickValue(String key)"}
+{"logLevel":"debug","message":"\t{} element on the page contains {} the value : public void attributeExistWithValue(String key, String value)"}
 {"logLevel":"debug","message":"\tChoose {} day later from {} : public void chooseValueFromCalendar(String key, int value) throws InterruptedException"}
-{"logLevel":"debug","message":"\t{} degerinden {} gün sonrasını sec : public void chooseValueFromCalendar(String key, int value) throws InterruptedException"}
 {"logLevel":"debug","message":"\tKaydedilmiş niteliği {} elementine yaz : public void writeSavedAttributeToElement(String key)"}
 {"logLevel":"debug","message":"\tComboboxtan {} seçersem : public void ComboboxSelecting(String text)"}
-{"logLevel":"debug","message":"\tSend BACKSPACE key to element {} : public void sendKeyToElementBACKSPACE(String key)"}
-{"logLevel":"debug","message":"\tSend TAB key to element {} : public void sendKeyToElementTAB(String key)"}
-{"logLevel":"debug","message":"\t{} li elementi bul ve değerini {} saklanan degeri yazdir : public void equalsSendTextByKey(String key, String saveKey) throws InterruptedException"}
+{"logLevel":"debug","message":"\tDismiss Chrome alert popup : public void dismissChromeAlertPopup()"}
 {"logLevel":"debug","message":"\tElementi bekle ve tıkla {} : public void ListofElementsLoaded(String key)"}
-{"logLevel":"debug","message":"\tClick element by {} if exist : public void existTapByKey(String key)"}
 {"logLevel":"debug","message":"\tSayfanın zoom değerini değiştir {}% : public void chromeZoomOut(String value)"}
-{"logLevel":"debug","message":"\t{} li elementi bul, temizle ve rasgele  email değerini yaz : public void RandomeMail(String key)"}
-{"logLevel":"debug","message":"\tSayfadaki {} elementi {} değerini içerir : public void attributeExistWithValue(String key, String value)"}
-{"logLevel":"debug","message":"\tKadın kategortisini seç : public void Selectcathegory() throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} li elementi bul, temizle ve rasgele email değerini yaz : public void RandomeMail(String key)"}
 {"logLevel":"debug","message":"\tAccept Chrome alert popup : public void acceptChromeAlertPopup()"}
+{"logLevel":"debug","message":"\t{} li elementin text değerinin boş olmadığını kontrol et : public void assertNotNullTextByKey(String key)"}
 {"logLevel":"debug","message":"\t{} uzunlugunda random bir kelime üret ve {} olarak sakla : public void createRandomString(int length, String saveKey)"}
+{"logLevel":"debug","message":"\tSend the text to the card Code {},{},and {} : public void sendTextToCardCode(String A1, String B1, String C1)"}
 {"logLevel":"debug","message":"\t{} li elementi bul, temizle ve {} değerini yaz : public void sendKeysByKey(String key, String text)"}
-{"logLevel":"debug","message":"\tElementine tıkla {} : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\t{} sayısını {} elemente yaz : public void sendIntKeys(Integer number, String key)"}
 {"logLevel":"debug","message":"\t{} textini {} elemente tek tek yaz : public void sendKeyOneByOne(String text, String key) throws InterruptedException"}
 {"logLevel":"debug","message":"\t{} textini {} elemente yaz : public void sendKeys(String text, String key)"}
-{"logLevel":"debug","message":"\tHide keyboard : public static void HideKeyboard()"}
-{"logLevel":"debug","message":"\tWrite saved attribute value to element {} : public void writeSavedAttributeToElement(String key)"}
+{"logLevel":"debug","message":"\tWrite value {} to element {}, if the element exists : public void sendKeysToExistElement(String text, String key)"}
 {"logLevel":"debug","message":"\tChange page zoom to {}% : public void chromeZoomOut(String value)"}
-{"logLevel":"debug","message":"\tFrame'e odaklan {} : public void chromeFocusFrameWithNumber(String key)"}
 {"logLevel":"debug","message":"\tCheck if {} element's attribute {} contains the value {} : public void checkElementAttributeContains(String key, String attribute, String expectedValue)"}
-{"logLevel":"debug","message":"\tKey li {} ementler arasından rasgele bir tanesine tıkla : public void randomSec(String key)"}
+{"logLevel":"debug","message":"\t{} double clicked to the element : public void doubleclickElement(String key)"}
+{"logLevel":"debug","message":"\tPick the one of elements {} randomly : public String pickTheElementRandom(String keys)"}
 {"logLevel":"debug","message":"\tWait for element then click {} : public void checkElementExistsThenClick(String key)"}
-{"logLevel":"debug","message":"\t{} değerini {} niteliğine {} elementi için yaz : public void setElementAttribute(String value, String attributeName, String key)"}
 {"logLevel":"debug","message":"\tEğer {} element sayfada ise tıkla : public void ifElementExistClick(String key)"}
 {"logLevel":"debug","message":"\t{} tarihinden 2 gün sonraya al : public void tarihAl(String key)"}
-{"logLevel":"debug","message":"\tWrite random value to element {} starting with {} : public void writeRandomValueToElement(String key, String startingText)"}
 {"logLevel":"debug","message":"\t{} elementinin {} niteliği {} değerine sahip mi : public void checkElementAttributeEquals(String key, String attribute, String expectedValue)"}
 {"logLevel":"debug","message":"\tSayfa yenilenir : public void refreshPage()"}
-{"logLevel":"debug","message":"\tProje içindeki {} dosyayı {} elemente upload et : public void uploadFile(String path, String key)"}
 {"logLevel":"debug","message":"\tWait {} seconds : public void waitBySeconds(int seconds)"}
 {"logLevel":"debug","message":"\tClear text of element {} : public void clearInputArea(String key)"}
 {"logLevel":"debug","message":"\tCheck if element {} not exists : public void checkElementNotExists(String key)"}
 {"logLevel":"debug","message":"\t{} li elementi bul, temizle : public void sendKeysByKey2(String key)"}
+{"logLevel":"debug","message":"\tElemente ENTER keyi yolla {} : public void sendKeyToElementENTER(String key)"}
+{"logLevel":"debug","message":"\t{} li elementi bul ve değerini {} olarak sakla : public void saveTextByKey(String key, String saveKey) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} elementinin text alanını BACKSPACE ile temizle : public void clearInputAreaWithBackspace(String key)"}
+{"logLevel":"debug","message":"\tFocus on frame with {} : public void chromeFocusFrameWithNumber(String key)"}
+{"logLevel":"debug","message":"\tAssert that the text of element {} is null : public void assertionOfElement(String key)"}
+{"logLevel":"debug","message":"\tClick with javascript to xpath {} : public void javascriptClickerWithXpath(String xpath)"}
+{"logLevel":"debug","message":"\tSend the text to the defined Activation Code field with {} : public void sendTextWithJs2(String key)"}
+{"logLevel":"debug","message":"\tGenerate to random phonenumber : public String rastgelTelNoGelsin()"}
+{"logLevel":"debug","message":"\tTelefon noyu {} elementine yaz : public void setRandomTelno(String key)"}
+{"logLevel":"debug","message":"\tUpload file in project {} to element {} : public void uploadFile(String path, String key)"}
+{"logLevel":"debug","message":"\tSend ENTER key to element {} : public void sendKeyToElementENTER(String key)"}
+{"logLevel":"debug","message":"\t{} saniye bekle : public void waitBySeconds(int seconds)"}
+{"logLevel":"debug","message":"\tFind element by {} clear and send keys {} : public void sendKeysByKey(String key, String text)"}
+{"logLevel":"debug","message":"\tYeni sekme aç : public void chromeOpenNewTab()"}
+{"logLevel":"debug","message":"\tTanımlanan elemente, value değerini yaz : public void sendValueByKey()"}
+{"logLevel":"debug","message":"\t{} elementi {} niteliğine sahip mi : public void checkElementAttributeExists(String key, String attribute)"}
+{"logLevel":"debug","message":"\t{} elementlerinden birini {} adetine göre random olarak dropdown listesinden seç : public void selectTheValueRandom(String key, String keys)"}
+{"logLevel":"debug","message":"\tCheck if element {} contains text {} : public void checkElementContainsText(String key, String expectedText)"}
+{"logLevel":"debug","message":"\tScrollu sayfanın sonuna kaydır : public void scrolldownBottomofPage()"}
+{"logLevel":"debug","message":"\tElementinin yüklenmesini bekle xpath {} : public void waitElementLoadWithXpath(String xpath)"}
+{"logLevel":"debug","message":"\tElementin text değerini yazdır css {} : public void printElementText(String css)"}
+{"logLevel":"debug","message":"\tTarih olarak günün tarihinden {} gün sonrasını seç : public void implementation2(String gun) throws InterruptedException"}
+{"logLevel":"debug","message":"\tWrite int value {} to element {} : public void sendIntKeys(Integer number, String key)"}
+{"logLevel":"debug","message":"\tFocus on last tab : public void chromeFocusLastTab()"}
+{"logLevel":"debug","message":"\t{} değerini {} elementine focus ile yaz : public void sendKeysWithFocus(String text, String key)"}
+{"logLevel":"debug","message":"\tPrint element text by css {} : public void printElementText(String css)"}
+{"logLevel":"debug","message":"\t{} elementleri arasından {} kayıtlı değişkene tıkla : public void clickParticularElement(String key, String text)"}
+{"logLevel":"debug","message":"\tFind element by {} and write the saved key {} to element : public void equalsSendTextByKey(String key, String saveKey) throws InterruptedException"}
+{"logLevel":"debug","message":"\tFind element by {} and compare saved key {} contains the text of element : public void equalsSaveTextByKeyContain(String key, String saveKey)"}
+{"logLevel":"debug","message":"\t{} li elementi bul ve değerini {} saklanan değer ile karşılaştır : public void equalsSaveTextByKey(String key, String saveKey)"}
+{"logLevel":"debug","message":"\tWait for element to load with xpath {} : public void waitElementLoadWithXpath(String xpath)"}
+{"logLevel":"debug","message":"\tUpload the file with {} to the element {} : public void uploadFileToElementWithPath(String path, String key)"}
+{"logLevel":"debug","message":"\tHamburger manüye tıkla : public void ClickHamburgerManu() throws InterruptedException"}
+{"logLevel":"debug","message":"\tFind element by {} and compare saved key {} and verified that there is differance : public void equalsSaveTextByKeyNotequal(String key, String saveKey)"}
+{"logLevel":"debug","message":"\tJavascript ile css tıkla {} : public void javascriptClickerWithCss(String css)"}
+{"logLevel":"debug","message":"\t{} değerini {} niteliğine {} elementi için JS ile yaz : public void setElementAttributeWithJs(String value, String attributeName, String key)"}
+{"logLevel":"debug","message":"\tElementi bekle ve sonra tıkla {} try : public void checkElementExistsThenClickTryCatch(String key)"}
+{"logLevel":"debug","message":"\tFind element by {} and save text {} : public void saveTextByKey(String key, String saveKey) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} li elementi bul, temizle ve rasgele  email değerini yaz, emaili {} olarak sakla : public void RandomeMailAndSave(String key, String saveKey)"}
+{"logLevel":"debug","message":"\t{} li elementi bul ve {} değerini tek tek yaz : public void sendKeysValueOfClear(String key, String text)"}
+{"logLevel":"debug","message":"\tÜrün seç : public void selectProduct() throws InterruptedException"}
+{"logLevel":"debug","message":"\tSend the text to the defined RUT field with {} : public void sendTextWithJs(String key)"}
+{"logLevel":"debug","message":"\tOpen new tab : public void chromeOpenNewTab()"}
+{"logLevel":"debug","message":"\tSelect the one of elements {} randomly regarding {} size in the dropdown list : public void selectTheValueRandom(String key, String keys)"}
+{"logLevel":"debug","message":"\tWait for element then click {} try : public void checkElementExistsThenClickTryCatch(String key)"}
+{"logLevel":"debug","message":"\t{} elementinin {} niteliği {} değerini içeriyor mu : public void checkElementAttributeContains(String key, String attribute, String expectedValue)"}
+{"logLevel":"debug","message":"\tWrite value {} to element {} : public void sendKeys(String text, String key)"}
+{"logLevel":"debug","message":"\t{} değişkenini {} elementine yaz : public void sendKeysVariable(String degisken, String key)"}
+{"logLevel":"debug","message":"\tDebug Step : public void debug() throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} elementlerinden birini random olarak seç : public String pickTheElementRandom(String keys)"}
+{"logLevel":"debug","message":"\tClick to element {} with focus : public void clickElementWithFocus(String key)"}
+{"logLevel":"debug","message":"\tFind element by {} clear and send keys random isim : public void RandomeName(String key)"}
+{"logLevel":"debug","message":"\t{} numaralı sekmeye odaklan : null"}
+{"logLevel":"debug","message":"\tWrite {} to {} of element {} : public void setElementAttribute(String value, String attributeName, String key)"}
+{"logLevel":"debug","message":"\t{} li elementin değeri {} e eşitliğini kontrol et : public void equalsTextByKey(String key, String text)"}
+{"logLevel":"debug","message":"\tPrint page source : public void printPageSource()"}
+{"logLevel":"debug","message":"\tGenarete random number and saved the number {}. And write the saveKey to the {} element : public void saveTheGenaretedValueAndWrite(String saveRandomAmount, String writeAmount) throws Exception"}
+{"logLevel":"debug","message":"\tGet current url and verify that the url is the same with the {} : public void getCurrentURL(String text)"}
+{"logLevel":"debug","message":"\tUpload the file to the element {} : public void uploadFileToElement(String key)"}
+{"logLevel":"debug","message":"\tGenarete random number for {} and {}, and saved the number {}. And write the saved key to the {} element : public void picksave(String key, String keys, String saveKey, String keyy)"}
+{"logLevel":"debug","message":"\tRefresh page : public void refreshPage()"}
+{"logLevel":"debug","message":"\t{} milisaniye bekle : public void waitByMilliSeconds(long milliseconds)"}
+{"logLevel":"debug","message":"\tScroll to the end of the page : public void scrolldownBottomofPage()"}
+{"logLevel":"debug","message":"\t{} elementi {} niteliğine sahip değil mi : public void checkElementAttributeNotExists(String key, String attribute)"}
+{"logLevel":"debug","message":"\t{} alanını javascript ile temizle : public void clearWithJS(String key)"}
+{"logLevel":"debug","message":"\t{} niteliğini sakla {} elementi için : public void saveAttributeValueOfElement(String attribute, String key)"}
+{"logLevel":"debug","message":"\t{} alanına kaydır : public void scrollToElement(String key)"}
+{"logLevel":"debug","message":"\tElemente ESCAPE keyi yolla {} : public void sendKeyToElementESCAPE(String key)"}
+{"logLevel":"debug","message":"\tGo to {} address : public void goToUrl(String url)"}
+{"logLevel":"debug","message":"\tFind element by {} and compare saved key {} : public void equalsSaveTextByKey(String key, String saveKey)"}
+{"logLevel":"debug","message":"\tCheck if element {} exists : public WebElement getElementWithKeyIfExists(String key)"}
+{"logLevel":"debug","message":"\tSon sekmeye odaklan : public void chromeFocusLastTab()"}
+{"logLevel":"debug","message":"\tWrite random value to element {} : public void writeRandomValueToElement(String key)"}
+{"logLevel":"debug","message":"\t{} degerinden {} gün sonrasını sec : public void chooseValueFromCalendar(String key, int value) throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} li elementi bul ve değerini {} saklanan degeri yazdir : public void equalsSendTextByKey(String key, String saveKey) throws InterruptedException"}
+{"logLevel":"debug","message":"\tSend TAB key to element {} : public void sendKeyToElementTAB(String key)"}
+{"logLevel":"debug","message":"\tSend BACKSPACE key to element {} : public void sendKeyToElementBACKSPACE(String key)"}
+{"logLevel":"debug","message":"\tClick element by {} if exist : public void existTapByKey(String key)"}
+{"logLevel":"debug","message":"\tSayfadaki {} elementi {} değerini içerir : public void attributeExistWithValue(String key, String value)"}
+{"logLevel":"debug","message":"\t{} ile tanımlanan elemente tıkla : public void clickValue(String key)"}
+{"logLevel":"debug","message":"\tKadın kategortisini seç : public void Selectcathegory() throws InterruptedException"}
+{"logLevel":"debug","message":"\t{} ile tanımlanan elemente Js ile değer yazdır : public void sendTextWithJs(String key)"}
+{"logLevel":"debug","message":"\tElementine tıkla {} : public void clickElement(String key)"}
+{"logLevel":"debug","message":"\tHide keyboard : public static void HideKeyboard()"}
+{"logLevel":"debug","message":"\tWrite saved attribute value to element {} : public void writeSavedAttributeToElement(String key)"}
+{"logLevel":"debug","message":"\tFrame'e odaklan {} : public void chromeFocusFrameWithNumber(String key)"}
+{"logLevel":"debug","message":"\tCompare saved key {} contains the other saved key {} of element : public void equalsSaveTextByOtherSaveTextContain(String saveKey, String saveKeyy)"}
+{"logLevel":"debug","message":"\t{} değerini {} niteliğine {} elementi için yaz : public void setElementAttribute(String value, String attributeName, String key)"}
+{"logLevel":"debug","message":"\tWrite random value to element {} starting with {} : public void writeRandomValueToElement(String key, String startingText)"}
+{"logLevel":"debug","message":"\tProje içindeki {} dosyayı {} elemente upload et : public void uploadFile(String path, String key)"}
 {"logLevel":"debug","message":"\t{} elementine javascript ile tıkla : public void elementeJSileTikla(String key)"}
 {"logLevel":"debug","message":"\t{} Vergi numarasına sahip kullanıcı için post metodu ile {} Talep Numarası oluştur : public String talepOlusturVeFiyatOnayıVer(String taxNumber, String BenimTalepNumaram)"}
-{"logLevel":"debug","message":"\tElemente ENTER keyi yolla {} : public void sendKeyToElementENTER(String key)"}
 {"logLevel":"debug","message":"\t{} elementine random değer yaz : public void writeRandomValueToElement(String key)"}
+{"logLevel":"debug","message":"\tSave Low dollar amount {} and Write Amount {} : public void getdollarAmountLowandWrite(String lowAmount, String writeAmount)"}
 {"logLevel":"debug","message":"\tSave attribute {} value of element {} : public void saveAttributeValueOfElement(String attribute, String key)"}
 {"logLevel":"debug","message":"\tFocus on tab number {} : public void chromeFocusTabWithNumber(int number)"}
 {"logLevel":"debug","message":"\tRastgele telefon no üret : public String rastgelTelNoGelsin()"}
-{"logLevel":"debug","message":"\t{} li elementi bul ve değerini {} olarak sakla : public void saveTextByKey(String key, String saveKey) throws InterruptedException"}
-{"logLevel":"debug","message":"\t{} elementinin text alanını BACKSPACE ile temizle : public void clearInputAreaWithBackspace(String key)"}
+{"logLevel":"debug","message":"\tGet text by {} and replace the symbols than save the text {} : public void replaceSomeValue(String key, String saveKeyy)"}
 {"logLevel":"debug","message":"\t{} elementinin text alanını temizle : public void clearInputArea(String key)"}
-{"logLevel":"debug","message":"\tFocus on frame with {} : public void chromeFocusFrameWithNumber(String key)"}
-{"logLevel":"debug","message":"\tClick with javascript to xpath {} : public void javascriptClickerWithXpath(String xpath)"}
 {"logLevel":"debug","message":"\tClear text of element {} with BACKSPACE : public void clearInputAreaWithBackspace(String key)"}
 {"logLevel":"debug","message":"\tClick with javascript to css {} : public void javascriptClickerWithCss(String css)"}
-{"logLevel":"debug","message":"\tTelefon noyu {} elementine yaz : public void setRandomTelno(String key)"}
-{"logLevel":"debug","message":"\tUpload file in project {} to element {} : public void uploadFile(String path, String key)"}
 {"logLevel":"debug","message":"\tCheck if {} element's attribute {} equals to the value {} : public void checkElementAttributeEquals(String key, String attribute, String expectedValue)"}
 {"logLevel":"debug","message":"\tWrite value {} to element {} with focus : public void sendKeysWithFocus(String text, String key)"}
 {"logLevel":"debug","message":"\t{} li elementi bul ve varsa dokun : public void existTapByKey(String key)"}
 {"logLevel":"debug","message":"\t{} li elementi bul ve değerini {} saklanan değeri içeriyor mu kontrol et : public void equalsSaveTextByKeyContain(String key, String saveKey)"}
 {"logLevel":"debug","message":"\t{} li elementi bul, temizle ve rasgele isim değerini yaz : public void RandomeName(String key)"}
 {"logLevel":"debug","message":"\tElement yok mu kontrol et {} : public void checkElementNotExists(String key)"}
-{"logLevel":"debug","message":"\t{} elementine çift tıkla : public void doubleclickElement(String key)"}
 {"logLevel":"debug","message":"\tElement var mı kontrol et {} : public WebElement getElementWithKeyIfExists(String key)"}
-{"logLevel":"debug","message":"\tSend ENTER key to element {} : public void sendKeyToElementENTER(String key)"}
 {"logLevel":"debug","message":"\tWait for element to load with css {} : public void waitElementLoadWithCss(String css)"}
-{"logLevel":"debug","message":"\t{} saniye bekle : public void waitBySeconds(int seconds)"}
 {"logLevel":"debug","message":"\t// Starting from 1\r\n\"{} numaralı sekmeye odaklan : public void chromeFocusTabWithNumber(int number)"}
 {"logLevel":"debug","message":"\t{} li elementi bul ve değerini {} saklanan değer ile karşılaştır ve değişiklik oldugunu dogrula : public void equalsSaveTextByKeyNotequal(String key, String saveKey)"}
-{"logLevel":"debug","message":"\tWrite verification code to {} : public void testVerificationCode(String element)"}
-{"logLevel":"debug","message":"\tYeni sekme aç : public void chromeOpenNewTab()"}
-{"logLevel":"debug","message":"\tFind element by {} clear and send keys {} : public void sendKeysByKey(String key, String text)"}
+{"logLevel":"debug","message":"\tSave Low amount {} and Write Amount {} : public void getAmountLowandWrite(String lowAmount, String writeAmount)"}
 {"logLevel":"debug","message":"\t{} elementine {} değerini js ile yaz : public void elementeJSileYaz(String key, String text)"}
 {"logLevel":"debug","message":"\tElemente DOWN keyi yolla {} : public void sendKeyToElementDOWN(String key)"}
 {"logLevel":"debug","message":"\tWrite {} to {} of element {} with Js : public void setElementAttributeWithJs(String value, String attributeName, String key)"}
-{"logLevel":"debug","message":"\t{} elementi {} niteliğine sahip mi : public void checkElementAttributeExists(String key, String attribute)"}
-{"logLevel":"debug","message":"\tElementin yüklenmesini bekle {} : public WebElement getElementWithKeyIfExists(String key)"}
 {"logLevel":"debug","message":"\t{} elementine focus ile tıkla : public void clickElementWithFocus(String key)"}
-{"logLevel":"debug","message":"\tCheck if element {} contains text {} : public void checkElementContainsText(String key, String expectedText)"}
-{"logLevel":"debug","message":"\tScrollu sayfanın sonuna kaydır : public void scrolldownBottomofPage()"}
+{"logLevel":"debug","message":"\tElementin yüklenmesini bekle {} : public WebElement getElementWithKeyIfExists(String key)"}
 {"logLevel":"debug","message":"\tClick to element {} : public void clickElement(String key)"}
-{"logLevel":"debug","message":"\tElementinin yüklenmesini bekle xpath {} : public void waitElementLoadWithXpath(String xpath)"}
-{"logLevel":"debug","message":"\tElementin text değerini yazdır css {} : public void printElementText(String css)"}
-{"logLevel":"debug","message":"\tTarih olarak günün tarihinden {} gün sonrasını seç : public void implementation2(String gun) throws InterruptedException"}
-{"logLevel":"debug","message":"\tFocus on last tab : public void chromeFocusLastTab()"}
-{"logLevel":"debug","message":"\t{} değerini {} elementine focus ile yaz : public void sendKeysWithFocus(String text, String key)"}
-{"logLevel":"debug","message":"\tPrint element text by css {} : public void printElementText(String css)"}
-{"logLevel":"debug","message":"\twrite the phone number to {} the element : public void setRandomTelno(String key)"}
-{"logLevel":"debug","message":"\t{} elementleri arasından {} kayıtlı değişkene tıkla : public void clickParticularElement(String key, String text)"}
+{"logLevel":"debug","message":"\tChrome uyarı popup'ını reddet : public void dismissChromeAlertPopup()"}
+{"logLevel":"debug","message":"\t{} li elementi bul ve değeri {} saklanan değeri içeriyor mu kontrol et : public void equalsSavedTextByKeyContains(String key, String saveKeys)"}
 {"logLevel":"debug","message":"\tSend DOWN key to element {} : public void sendKeyToElementDOWN(String key)"}
 {"logLevel":"debug","message":"\tChrome uyarı popup'ını kabul et : public void acceptChromeAlertPopup()"}
-{"logLevel":"debug","message":"\t{} li elementi bul ve değerini {} saklanan değer ile karşılaştır : public void equalsSaveTextByKey(String key, String saveKey)"}
-{"logLevel":"debug","message":"started gRPC server on port 60981"}
-{"logLevel":"info","message":"Listening on port:60981"}
-2022-07-20 13:15:29 INFO  Reflections:219 scan - Reflections took 3085 ms to scan 133 urls, producing 12803 keys and 60926 values
+{"logLevel":"debug","message":"started gRPC server on port 58363"}
+{"logLevel":"info","message":"Listening on port:58363"}
+2022-11-15 14:23:25 INFO  Reflections:219 scan - Reflections took 2364 ms to scan 132 urls, producing 12398 keys and 58774 values
 *****************Test*****************
 LOCAL
 android
+Nov 15, 2022 2:23:51 PM org.openqa.selenium.remote.ProtocolHandshake createSession
+INFO: Detected dialect: W3C
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class base.BaseSteps.waitBySeconds"}
+2022-11-15 14:23:55 INFO  BaseSteps:166 waitBySeconds - Waiting '2' seconds.
+{"logLevel":"debug","message":"Executing 'Wait for element then click {}' using 'class base.BaseSteps.checkElementExistsThenClick"}
+2022-11-15 14:23:57 INFO  StoreHelper:84 lambda$getFileList$2 - Main.json adlı json dosyası bulundu.
+172 Adet element listeye eklendi
+2022-11-15 14:23:57 INFO  BaseSteps:219 getElementWithKeyIfExists - hamburgerMenu element is found.
+2022-11-15 14:23:58 INFO  BaseSteps:196 clickElement - Clicked to the hamburgerMenu
+{"logLevel":"debug","message":"Executing 'Wait for element then click {}' using 'class base.BaseSteps.checkElementExistsThenClick"}
+2022-11-15 14:23:58 INFO  BaseSteps:219 getElementWithKeyIfExists - loginButtonInHamburgerMenu element is found.
+2022-11-15 14:23:58 INFO  BaseSteps:196 clickElement - Clicked to the loginButtonInHamburgerMenu
+{"logLevel":"debug","message":"Executing 'Write value {} to element {}' using 'class base.BaseSteps.sendKeys"}
+2022-11-15 14:23:59 INFO  BaseSteps:317 sendKeys - 'iqra.manzoor@ligastavok.ru' text is written to the 'loginUserNameArea' element.
+{"logLevel":"debug","message":"Executing 'Write value {} to element {}' using 'class base.BaseSteps.sendKeys"}
+2022-11-15 14:23:59 INFO  BaseSteps:317 sendKeys - '123456789' text is written to the 'loginPasswordArea' element.
+{"logLevel":"debug","message":"Executing 'Click to element {}' using 'class base.BaseSteps.clickElement"}
+2022-11-15 14:24:00 INFO  BaseSteps:196 clickElement - Clicked to the loginButtonArea
+{"logLevel":"debug","message":"Executing 'Click to element {}' using 'class base.BaseSteps.clickElement"}
+2022-11-15 14:24:00 INFO  BaseSteps:196 clickElement - Clicked to the hamburgerMenu
+{"logLevel":"debug","message":"Executing 'Click to element {}' using 'class base.BaseSteps.clickElement"}
+2022-11-15 14:24:06 INFO  BaseSteps:196 clickElement - Clicked to the goToPaymentPage
+{"logLevel":"debug","message":"Executing 'Wait for element then click {}' using 'class base.BaseSteps.checkElementExistsThenClick"}
+2022-11-15 14:24:08 INFO  BaseSteps:219 getElementWithKeyIfExists - monnetBankMethod element is found.
+2022-11-15 14:24:08 INFO  BaseSteps:196 clickElement - Clicked to the monnetBankMethod
+{"logLevel":"debug","message":"Executing 'Save Low amount {} and Write Amount {}' using 'class base.BaseSteps.getAmountLowandWrite"}
+2022-11-15 14:24:10 INFO  BaseSteps:1531 getAmountLowandWrite - String Low Value with Comma: 4,000
+2022-11-15 14:24:10 INFO  BaseSteps:1533 getAmountLowandWrite - String Low Value: 4000
+2022-11-15 14:24:10 INFO  BaseSteps:1538 getAmountLowandWrite - Formatted String Value is : 4000
+2022-11-15 14:24:10 INFO  BaseSteps:1540 getAmountLowandWrite - String Current Value is: 4000
+2022-11-15 14:24:10 INFO  BaseSteps:1542 getAmountLowandWrite - lowNumber: 4000
+2022-11-15 14:24:10 INFO  BaseSteps:1545 getAmountLowandWrite - saveKey for genareted random number: depositLowAmount
+2022-11-15 14:24:10 INFO  BaseSteps:166 waitBySeconds - Waiting '2' seconds.
+{"logLevel":"debug","message":"Executing 'Pick the one of elements {} randomly' using 'class base.BaseSteps.pickTheElementRandom"}
+2022-11-15 14:24:14 INFO  BaseSteps:1337 pickTheElementRandom - value: Passport
+2022-11-15 14:24:14 INFO  BaseSteps:1338 pickTheElementRandom - The element is selected
+{"logLevel":"debug","message":"Executing 'Find element by {} clear and send keys {}' using 'class base.BaseSteps.sendKeysByKey"}
+2022-11-15 14:24:14 INFO  BaseSteps:219 getElementWithKeyIfExists - identityNumberForMonnet element is found.
+2022-11-15 14:24:14 INFO  BaseSteps:782 sendKeysByKey - the text is written: '111111211'
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class base.BaseSteps.waitBySeconds"}
+2022-11-15 14:24:14 INFO  BaseSteps:166 waitBySeconds - Waiting '2' seconds.
+{"logLevel":"debug","message":"Executing 'Click to the defined element with {}' using 'class base.BaseSteps.clickValue"}
+{"logLevel":"debug","message":"Executing 'Wait {} seconds' using 'class base.BaseSteps.waitBySeconds"}
+2022-11-15 14:24:17 INFO  BaseSteps:166 waitBySeconds - Waiting '5' seconds.
+{"logLevel":"debug","message":"Executing 'scroll to the element {} be visible' using 'class base.BaseSteps.scrollToElement"}
 {"logLevel":"debug","message":"Killing Java runner..."}
 {"logLevel":"debug","message":"Stopping execution pool..."}
 {"logLevel":"debug","message":"Shutting down grpc server..."}

@@ -27,8 +27,8 @@ tags:register
 * Wait "5" seconds
 * Go to register page
 * Sign Up
-* Verify that the registration is done
-* Verify that the site is proceeded to Login Page
+//* Verify that the registration is done
+//* Verify that the site is proceeded to Login Page
 
 ## Login the QA account
 * Go to QA Env
@@ -75,23 +75,24 @@ tags:makeDepositWithAccentInMethod
 * Go to QA Env
 * Go to Payment
 * Choose to Payment Method with "depositAccentInMethod"
-* Genarete Random Deposit Value and Enter that value
+* Enter Amount
+//* Genarete Random Deposit Value and Enter that value
 * Continue To Transaction
-* Enter Credit Card İnformation with "4051885600446623", "Test Test" and "123"
-
-//* Verify the deposit information and continue the main site
-//* Go to Booking Page
+* Enter Credit Card İnformation with "4242 4242 4242 4242", "Test Test" and "123"
+* Verify the deposit information and continue the main site
+* Go to Booking Page
 
 ## Make Deposite With Apco Method
 tags:makeDepositWithApcoMethod
 * Go to QA Env
 * Go to Payment
 * Choose to Payment Method with "apcoMethod"
-* Genarete Random Deposit Value and Enter that value
+* Enter Amount
+//* Genarete Random Deposit Value and Enter that value
 * Continue To Transaction
-* Enter Credit Card İnformation with "4051 8856 0044 6623", "Test Test" and "123" apco
-//* Verify the deposit information and continue the main site
-//* Go to Booking Page
+* Enter Credit Card İnformation with "4444444444442228", "Test Test" and "123" apco
+* Verify the deposit information and continue the main site
+* Go to Booking Page
 
 ## Make Deposite With APS Bank Transfer Method
 tags:makeDepositWithBankTransferMethod
@@ -102,7 +103,8 @@ tags:makeDepositWithBankTransferMethod
 //* Genarete Random Deposit Value and Enter that value
 * Continue To Transaction
 * Enter Bank Account Information "111111111" for APS
-* Select the bank option for Bank Method
+* Click Back Trade And Redirect to website
+//* Select the bank option for Bank Method
 
 ## Make Deposite With APS Card Method
 tags:makeDepositWithAPSMethod
@@ -152,10 +154,11 @@ tags:makeDepositWithMonnetDebitMethod
 * Go to QA Env
 * Go to Payment
 * Choose to Payment Method with "monnetCardMethod"
-* Genarete Random Deposit Value and Enter that value
+* Enter Amount
+//* Genarete Random Deposit Value and Enter that value
 * Select the Identity Type and Enter the Identity Number
 * Continue To Transaction
-* Compare the deposit amount "randomNumber" to the value in payment method "paymentValue" by replaced text "depositAmountInThirdPartForMonnetDebitMethod"
+//* Compare the deposit amount "randomNumber" to the value in payment method "paymentValue" by replaced text "depositAmountInThirdPartForMonnetDebitMethod"
 * Select to the "debitOptionForMonnet" option for deposit method
 * Select the bank option and enter bank card info "4051 8856 0044 6623" for debit
 * Enter Rut and Clave info at Welcome of TransBank page
@@ -167,20 +170,22 @@ tags:makeDepositWithMonnetBankTransferMethod
 * Go to QA Env
 * Go to Payment
 * Choose to Payment Method with "monnetBankMethod"
-* Genarete Random Deposit Value and Enter that value
+* Enter Amount
+//* Genarete Random Deposit Value and Enter that value
 * Select the Identity Type and Enter the Identity Number
 * Continue To Transaction
-* Compare the deposit amount "randomNumber" to the value in payment method "paymentValue" by replaced text "depositAmountInThirdPartForMonnetBankMethod"
+//* Compare the deposit amount "randomNumber" to the value in payment method "paymentValue" by replaced text "depositAmountInThirdPartForMonnetBankMethod"
 * Select the bank option for Bank Method
 
 
 ## Make Withdrawal With Monnet Method
 tags:makeWithdrawalWithMonnetMethod
-* Go to QA Env
+* Go to QA Env For Equador country
 * Go to Payment
 * Go to Withdrawal Methods
 * Choose to Payment Method with "monnetWithdrawalMethods"
-* Genarete Random Transaction Value and Enter that value
+* Enter Amount For Dollar
+//* Genarete Random Transaction Value and Enter that value
 * Select the Bank Type and Enter the Account Number
 * Select the Identity Type and Enter the Account Number
 * Continue To Transaction
@@ -191,13 +196,14 @@ tags:makeWithdrawalWithAPSMethod
 * Go to Payment
 * Go to Withdrawal Methods
 * Choose to Payment Method with "apsWithdrawalMethods"
-* Genarete Random Transaction Value and Enter that value
+* Enter Amount
+//* Genarete Random Transaction Value and Enter that value
 * Select the Bank Type and Enter the Account Number
 * Select the Identity Type and Enter the Account Number
 * Continue To Transaction
-* Compare the entered withdrawal amount same with amount which inside the transactions info
+//* Compare the entered withdrawal amount same with amount which inside the transactions info
 * Go to Booking Page
-* Compare the transactions number which both in the transaction page and also the booking page
+//* Compare the transactions number which both in the transaction page and also the booking page
 
 ## Make Withdrawal With Apco Method
 tags:makeWithdrawalWithApcoMethod
@@ -205,6 +211,23 @@ tags:makeWithdrawalWithApcoMethod
 * Go to Payment
 * Go to Withdrawal Methods
 * Choose to Payment Method with "apcoWithdrawalMethods"
+* Enter Amount
+//* Genarete Random Transaction Value and Enter that value
+* Select the Credit Card
+* Write Masked Card Number
+* Select Month and Year
+* Continue To Transaction
+//* Compare the entered withdrawal amount same with amount which inside the transactions info
+* Continue to accept the payment
+* Go to Booking Page
+//* Compare the transactions number which both in the transaction page and also the booking page
+
+## Make Withdrawal With Accent Out Method
+tags:makeWithdrawalWithAccentOutMethod
+* Go to QA Env
+* Go to Payment
+* Go to Withdrawal Methods
+* Choose to Payment Method with "accentWithdrawalMethods"
 * Enter Amount
 //* Genarete Random Transaction Value and Enter that value
 * Select the Credit Card
