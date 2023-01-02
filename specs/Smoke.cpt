@@ -49,40 +49,55 @@ This is a concept file with following syntax for each concept.
 
 # Go to register page
 *Wait "2" seconds
-* Wait for element then click "hamburgerMenu"
+//* Wait for element then click "hamburgerMenu"
 //* Click to element "registerButton"
-* Wait for element then click "registerButton"
-* Wait "2" seconds
+* Click join button
+//* Check if element "registerButton" exists
+//* Wait for element then click "registerButton"
+//* Wait "2" seconds
 
 # Sign Up
+* Check if element exists
+* Click phone code
+* Select phone code
+* Write random Int value to element
+//* Click currency button
+* Find element by clear and send keys  random email
+* Write random Alpha value to element starting with "test"
+* Write random Alpha value to element Last Name starting with "testinium"
+* Write Birth Day Int value to element
+* Write Password value to element
+
+//* Pick the one of elements "phoneNumberCode" randomly
+//* Write random Int value to element ""
 //* Find element by "firstNameInput" clear and send keys "test"
-* Write random Alpha value to element "firstNameInput" starting with "test"
-* Write random Alpha value to element "lastNameInput" starting with "testinium"
+//* Write random Alpha value to element "firstNameInput" starting with "test"
+//* Write random Alpha value to element "lastNameInput" starting with "testinium"
 //* Debug Step
 //* Find element by "birthdayField" and send value
-* Send value to the defined element
+//* Send value to the defined element
 //* Date picker from Android Calendar "10.10.1990" for date's field "birthdayField"
 //* Write random date to element "birthdayField"
-* Click to element "nextBtn"
-* Find element by "email" clear and send keys random email
-* Write value "qwerty123" to element "registerPassword"
-* Write value "qwerty123" to element "registerPasswordRepeat"
-* Wait "2" seconds
-* Pick the one of elements "phoneNumberCodeOptions" randomly
-* Wait "2" seconds
+//* Click to element "nextBtn"
+//* Find element by "email" clear and send keys random email
+//* Write value "qwerty123" to element "registerPassword"
+//* Write value "qwerty123" to element "registerPasswordRepeat"
+//* Wait "2" seconds
+//* Pick the one of elements "phoneNumberCodeOptions" randomly
+//* Wait "2" seconds
 //* Wait for element then click "phoneNumber"
-* Send number to the defined element
+//* Send number to the defined element
 //* Generate to random phonenumber
-* Wait "2" seconds
-* Pick the one of elements "countryOptions" randomly
-* Wait "2" seconds
-* Pick the one of elements "currencyOptions" randomly
-* Wait "2" seconds
+//* Wait "2" seconds
+//* Pick the one of elements "countryOptions" randomly
+//* Wait "2" seconds
+//* Pick the one of elements "currencyOptions" randomly
+//* Wait "2" seconds
 //* scroll to the "<key>" area
 //* write the phone number to "mobilephone" the element
-* Wait for element then click "nextBtn"
-* Wait for element then click "acceptCheckBox"
-* Wait for element then click "saveButton"
+//* Wait for element then click "nextBtn"
+//* Wait for element then click "acceptCheckBox"
+//* Wait for element then click "saveButton"
 
 # Verify that the registration is done
 * Find element by "registrationLabel" and verify that text of element equals to "Registration completed!"
@@ -496,7 +511,8 @@ This is a concept file with following syntax for each concept.
 
 
 # Select The Value In Dropdown List Test
-* Select the one of elements "dropdownListTest" randomly regarding "optionsOfTest" size in the dropdown list
+* Wait "5" seconds
+//* Select the one of elements "dropdownListTest" randomly regarding "optionsOfTest" size in the dropdown list
 
 # Go to Bet Settings Page
 * Click to element "hamburgerMenu"

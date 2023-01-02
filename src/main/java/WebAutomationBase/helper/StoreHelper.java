@@ -73,7 +73,7 @@ public enum StoreHelper
 
             }
         }
-        System.out.println(elementMapList.size() + " Adet element listeye eklendi");
+        System.out.println(elementMapList.size() + " Number of elements added to the list");
     }
 
     public List<File> getFileList(String directoryName) throws IOException {
@@ -81,7 +81,7 @@ public enum StoreHelper
         try (Stream<Path> walkStream = Files.walk(Paths.get(directoryName))) {
             walkStream.filter(p -> p.toFile().isFile()).forEach(f -> {
                 if (f.toString().endsWith(".json")) {
-                    logger.info(f.toFile().getName() + " adlı json dosyası bulundu.");
+                    logger.info(f.toFile().getName() + " json file named found.");
                     dirList.add(f.toFile());
                 }
             });

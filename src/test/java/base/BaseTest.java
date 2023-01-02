@@ -45,7 +45,7 @@ public class BaseTest {
     public static void setUp() throws MalformedURLException, Exception {
         System.out.println("*****************Test*****************");
         String selectPlatform = "android";
-        String BaseUrl = "https://m-test.texsportbet.com/en-gb/";
+//        String BaseUrl = "D://Iqra Project//MobileAutomation//mobilewebgauge-master//src//test//resources//app-release (4).apk";
         DesiredCapabilities capabilities = new DesiredCapabilities();
 
         //options.setExperimentalOption("excludeSwitches",Arrays.asList("disable-popup-blocking"));
@@ -64,14 +64,16 @@ public class BaseTest {
                 System.out.println("android");
                // Map<String, Object> prefs = new HashMap<String, Object>();
                 prefs.put("profile.default_content_setting_values.notifications", 2);
-                capabilities.setCapability(MobileCapabilityType.BROWSER_NAME, BrowserType.CHROME);
                 capabilities.setCapability(MobileCapabilityType.PLATFORM, Platform.ANDROID);
-                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "Galaxy S8+");
+                capabilities.setCapability("VERSION", "10");
+                capabilities.setCapability(MobileCapabilityType.DEVICE_NAME, "emulator-5554");
+                capabilities.setCapability("appActivity","com.GoBet.MainActivity");
+                capabilities.setCapability("appPackage", "com.GoBet.envDev");
                 capabilities.setCapability("autoGrantPermissions", false);
                 capabilities.setCapability("dismissAlert",true);
                 URL url = new URL("http://127.0.0.1:4723/wd/hub");
                 webDriver = new AndroidDriver<> (url,capabilities);
-                webDriver.get(BaseUrl);
+ //               webDriver.get(BaseUrl);
                 Thread.sleep(3000);
 
         }else if ("ios".equalsIgnoreCase(selectPlatform)) {
@@ -84,7 +86,7 @@ public class BaseTest {
                 capabilities.setCapability(MobileCapabilityType.UDID, "00008030-000475A92E39802E");
                 DesiredCapabilities desiredCapabilities = new DesiredCapabilities();
                 webDriver = new IOSDriver<>(new URL("http://127.0.0.1:4723/wd/hub"), capabilities);
-                webDriver.get(BaseUrl);
+ //               webDriver.get(BaseUrl);
 
                 for (Cookie cookie : webDriver.manage().getCookies()) {
                     System.out.println("Cooooookie " + cookie);
@@ -130,7 +132,7 @@ public class BaseTest {
                 capabilities.setCapability("noReset", true);
 
                 webDriver = new AndroidDriver<>(new URL("http://hub.testinium.io/wd/hub"), capabilities);
-                webDriver.get(BaseUrl);
+//                webDriver.get(BaseUrl);
                 //String versionOfDevice = System.getenv("version");
                 System.out.println("Version of running device is " + versionOfDevice);
                 // driver.manage().deleteAllCookies();
@@ -148,7 +150,7 @@ public class BaseTest {
                 capabilities.setCapability("ensureCleanSession", true);
                 capabilities.setCapability("technologyPreview", true);
                 webDriver = new IOSDriver<WebElement>(new URL("http://hub.testinium.io/wd/hub"), capabilities);
-                webDriver.get(BaseUrl);
+//                webDriver.get(BaseUrl);
                 try {
                     Thread.sleep(20000);
                 } catch (InterruptedException e) {

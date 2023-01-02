@@ -39,7 +39,7 @@ public class BaseSteps extends BaseTest {
     public static int DEFAULT_MAX_ITERATION_COUNT = 150;
     public static int DEFAULT_MILLISECOND_WAIT_AMOUNT = 100;
 
-    private static Log4jLoggerAdapter logger = (Log4jLoggerAdapter) LoggerFactory
+    public static Log4jLoggerAdapter logger = (Log4jLoggerAdapter) LoggerFactory
             .getLogger(BaseSteps.class);
 
     private static String SAVED_ATTRIBUTE;
@@ -53,7 +53,7 @@ public class BaseSteps extends BaseTest {
 
     public static final int MAX_WAIT = 20;
 
-    private WebElement findElement(String key) {
+    public WebElement findElement(String key) {
         ElementInfo elementInfo = StoreHelper.INSTANCE.findElementInfoByKey(key);
         By infoParam = ElementHelper.getElementInfoToBy(elementInfo);
         WebDriverWait webDriverWait = new WebDriverWait(webDriver, 10);
@@ -64,7 +64,7 @@ public class BaseSteps extends BaseTest {
         return webElement;
     }
 
-    private List<WebElement> findElements(String key) {
+    public List<WebElement> findElements(String key) {
         ElementInfo elementInfo = StoreHelper.INSTANCE.findElementInfoByKey(key);
         By infoParam = ElementHelper.getElementInfoToBy(elementInfo);
         return webDriver.findElements(infoParam);
@@ -229,6 +229,24 @@ public class BaseSteps extends BaseTest {
         return null;
     }
 
+    @Step({"Write random Int value to element <key>",
+            "<key> elementine random değer yaz"})
+    public void writeRandomIntValueToElement(String key) {
+        findElement(key).sendKeys(randomNumber(9));
+    }
+
+    public String randomNumber(int stringLength) {
+
+        Random random = new Random();
+        char[] chars = "0123456789".toCharArray();
+        String stringRandom = "";
+        for (int i = 0; i < stringLength; i++) {
+
+            stringRandom = stringRandom + chars[random.nextInt(chars.length)];
+        }
+
+        return stringRandom;
+    }
 
     @Step({"Go to <url> address",
             "<url> adresine git"})
@@ -694,7 +712,7 @@ public class BaseSteps extends BaseTest {
         }
     }
 
-    private Long getTimestamp() {
+    public Long getTimestamp() {
         Timestamp timestamp = new Timestamp(System.currentTimeMillis());
         return (timestamp.getTime());
     }
@@ -892,6 +910,15 @@ public class BaseSteps extends BaseTest {
         webElement.sendKeys("testotomasyon" + timestamp + "@testinium.com");
         String randomMail = "testotomasyon" + timestamp + "@testinium.com";
         StoreHelper.INSTANCE.saveValue(saveKey, randomMail);
+
+    }
+    @Step({"<key> li elementi bul, temizle ve rasgele  email değerini yaz",
+            "Find element by <key> clear and send keys  random email"})
+    public void RandomMail(String key) {
+        Long timestamp = getTimestamp();
+        WebElement webElement = findElementWithKey(key);
+        webElement.clear();
+        webElement.sendKeys("test" + timestamp + "@testinium.com");
 
     }
 
@@ -1470,24 +1497,24 @@ public void  searchKeyy(String key) throws InterruptedException {
         return result;
     }
 
-    @Step({"<keys> elementlerinden birini <key> adetine göre random olarak dropdown listesinden seç",
-            "Select the one of elements <key> randomly regarding <keys> size in the dropdown list"})
-    public void selectTheValueRandom(String key, String keys){
-        WebElement headingOfDropdown = findElement(key);
-        Select drpList = new Select(headingOfDropdown);
-      //  clickElement(headerOfDropdown);
-        waitBySeconds(2);
-        List<WebElement> dropdownElements = findElements(keys);
-        int dropdownValuesSize = dropdownElements.size();
-        logger.info("elements size: " + dropdownValuesSize);
-        //Get all options
-        Random rand = new Random();
-        int index = rand.nextInt(dropdownValuesSize);
-        logger.info("random index is: " + index);
-
-        drpList.selectByIndex(index);
-        logger.info("The element is selected");
-    }
+//    @Step({"<keys> elementlerinden birini <key> adetine göre random olarak dropdown listesinden seç",
+//            "Select the one of elements <key> randomly regarding <keys> size in the dropdown list"})
+//    public void selectTheValueRandom(String key, String keys){
+//        WebElement headingOfDropdown = findElement(key);
+//        Select drpList = new Select(headingOfDropdown);
+//      //  clickElement(headerOfDropdown);
+//        waitBySeconds(2);
+//        List<WebElement> dropdownElements = findElements(keys);
+//        int dropdownValuesSize = dropdownElements.size();
+//        logger.info("elements size: " + dropdownValuesSize);
+//        //Get all options
+//        Random rand = new Random();
+//        int index = rand.nextInt(dropdownValuesSize);
+//        logger.info("random index is: " + index);
+//
+//        drpList.selectByIndex(index);
+//        logger.info("The element is selected");
+//    }
 
     @Step({"Tanımlanan elemente, value değerini yaz",
             "Send value to the defined element"})
